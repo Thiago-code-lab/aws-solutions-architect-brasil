@@ -3,694 +3,661 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AWS SAA-C03 Studies Brasil</title>
+  <title>AWS SAA-C03 · Solutions Architect Associate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #232F3E;
-      --panel: #2d3f53;
-      --panel-2: #1b2632;
-      --accent: #FF9900;
-      --text: #FFFFFF;
-      --muted: #c7d2dc;
-      --success: #1A9C3E;
-      --warning: #d98a00;
-      --border: rgba(255, 255, 255, 0.12);
-      --shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
+      --bg:   #04030d;
+      --s1:   #070614;
+      --s2:   #0a091a;
+      --s3:   #0d0c22;
+      --v1:   #5b21b6;
+      --v2:   #7c3aed;
+      --v3:   #8b5cf6;
+      --v4:   #a78bfa;
+      --v5:   #c4b5fd;
+      --mg:   #d946ef;
+      --bl:   #3b82f6;
+      --gn:   #10b981;
+      --am:   #f59e0b;
+      --tx:   #ece9ff;
+      --tx2:  #706ea0;
+      --tx3:  #2a2848;
+      --mono: 'JetBrains Mono', monospace;
+      --disp: 'Syne', sans-serif;
     }
-
-    body.light {
-      --bg: #f2f6fa;
-      --panel: #ffffff;
-      --panel-2: #e8eef5;
-      --accent: #FF9900;
-      --text: #1d2733;
-      --muted: #526273;
-      --success: #1A9C3E;
-      --warning: #b86f00;
-      --border: rgba(35, 47, 62, 0.12);
-      --shadow: 0 16px 40px rgba(35, 47, 62, 0.1);
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
     body {
-      margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-family:var(--disp);
+      background:var(--bg);
+      color:var(--tx);
+      overflow-x:hidden;
+    }
+    a { color:inherit; text-decoration:none; }
+
+    /* ── BACKGROUND LAYERS ── */
+    #stars { position:fixed; inset:0; z-index:0; pointer-events:none; }
+    .atmo {
+      position:fixed; inset:0; z-index:0; pointer-events:none;
       background:
-        radial-gradient(circle at top right, rgba(255, 153, 0, 0.18), transparent 26%),
-        linear-gradient(180deg, var(--bg), var(--panel-2));
-      color: var(--text);
+        radial-gradient(ellipse 140% 70% at 50% -8%,  rgba(91,33,182,0.32) 0%, transparent 55%),
+        radial-gradient(ellipse 70%  60% at 100% 35%,  rgba(217,70,239,0.13) 0%, transparent 50%),
+        radial-gradient(ellipse 60%  50% at 0%   75%,  rgba(59,130,246,0.10) 0%, transparent 50%),
+        radial-gradient(ellipse 80%  50% at 50%  110%, rgba(124,58,237,0.12) 0%, transparent 55%);
+    }
+    .grid-bg {
+      position:fixed; inset:0; z-index:0; pointer-events:none;
+      background-image:
+        linear-gradient(rgba(139,92,246,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(139,92,246,0.06) 1px, transparent 1px);
+      background-size:52px 52px;
+      mask-image:radial-gradient(ellipse 110% 80% at 50% 0%, black 25%, transparent 70%);
     }
 
-    a { color: inherit; }
+    .shell { width:min(1200px,calc(100% - 40px)); margin:0 auto; position:relative; z-index:2; }
 
-    .shell {
-      width: min(1200px, calc(100% - 32px));
-      margin: 0 auto;
-    }
-
+    /* ── HEADER ── */
     header {
-      padding: 28px 0 12px;
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      background: linear-gradient(180deg, rgba(35, 47, 62, 0.94), rgba(35, 47, 62, 0.72), transparent);
-      backdrop-filter: blur(10px);
+      position:sticky; top:0; z-index:100;
+      background:rgba(4,3,13,0.78);
+      backdrop-filter:blur(30px) saturate(200%);
+      border-bottom:1px solid rgba(139,92,246,0.16);
     }
-
-    body.light header {
-      background: linear-gradient(180deg, rgba(242, 246, 250, 0.94), rgba(242, 246, 250, 0.78), transparent);
+    header::after {
+      content:''; position:absolute; bottom:-1px; left:0; right:0; height:1px;
+      background:linear-gradient(90deg,
+        transparent, rgba(139,92,246,0.55) 30%,
+        rgba(217,70,239,0.40) 65%, transparent);
     }
-
     .topbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px; flex-wrap:wrap; padding:16px 0 0;
+    }
+    .brand { display:flex; align-items:center; gap:14px; }
+
+    /* hexagonal logo */
+    .hex-logo {
+      position:relative; width:48px; height:48px;
+      display:grid; place-items:center; flex-shrink:0;
+    }
+    .hex-logo svg.frame {
+      position:absolute; inset:0; width:100%; height:100%;
+      filter:drop-shadow(0 0 10px rgba(124,58,237,0.9))
+             drop-shadow(0 0 28px rgba(124,58,237,0.45))
+             drop-shadow(0 0 56px rgba(124,58,237,0.20));
+    }
+    .hex-logo svg.mark { position:relative; z-index:1; }
+
+    .brand-info h1 {
+      font-size:clamp(0.9rem,1.5vw,1.15rem);
+      font-weight:700; letter-spacing:-0.01em; color:var(--tx);
+    }
+    .brand-info p { font-size:0.7rem; color:var(--tx2); margin-top:2px; font-family:var(--mono); }
+
+    .actions { display:flex; gap:8px; }
+    .btn {
+      border:1px solid rgba(139,92,246,0.22);
+      background:rgba(139,92,246,0.06); color:var(--tx2);
+      border-radius:6px; padding:8px 16px;
+      font-size:0.74rem; font-weight:600; cursor:pointer;
+      transition:all 0.2s; font-family:var(--disp);
+    }
+    .btn:hover {
+      border-color:var(--v4); color:var(--v5);
+      background:rgba(139,92,246,0.14);
+      box-shadow:0 0 18px rgba(124,58,237,0.22);
     }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      text-decoration: none;
+    .filter-strip {
+      display:flex; gap:6px; flex-wrap:wrap;
+      padding:11px 0 14px;
+    }
+    .chip {
+      border:1px solid rgba(139,92,246,0.16);
+      background:rgba(139,92,246,0.04); color:var(--tx2);
+      border-radius:6px; padding:5px 14px;
+      font-size:0.72rem; font-weight:600; cursor:pointer;
+      transition:all 0.2s; font-family:var(--disp);
+      white-space:nowrap; letter-spacing:0.02em;
+    }
+    .chip:hover { border-color:rgba(139,92,246,0.38); color:var(--v5); background:rgba(139,92,246,0.09); }
+    .chip.on {
+      border-color:var(--v3); color:var(--v5);
+      background:linear-gradient(135deg,rgba(91,33,182,0.22),rgba(139,92,246,0.10));
+      box-shadow:0 0 20px rgba(124,58,237,0.25),inset 0 0 20px rgba(124,58,237,0.06);
     }
 
-    .brand-mark {
-      width: 52px;
-      height: 52px;
-      border-radius: 14px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(135deg, var(--accent), #ffbf5c);
-      color: #232F3E;
-      box-shadow: var(--shadow);
+    /* ── HERO ── */
+    .hero { padding:44px 0 28px; display:grid; grid-template-columns:1.35fr 0.88fr; gap:22px; }
+
+    .cert-pill {
+      display:inline-flex; align-items:center; gap:10px;
+      background:linear-gradient(135deg,rgba(91,33,182,0.16),rgba(217,70,239,0.08));
+      border:1px solid rgba(139,92,246,0.32); border-radius:99px;
+      padding:6px 16px 6px 10px; margin-bottom:22px;
+      font-size:0.68rem; font-weight:600; font-family:var(--mono);
+      color:var(--v5); letter-spacing:0.05em;
+      box-shadow:0 0 24px rgba(91,33,182,0.18);
+    }
+    .pulse-dot {
+      width:8px; height:8px; border-radius:50%; background:var(--v3);
+      box-shadow:0 0 0 3px rgba(139,92,246,0.2), 0 0 14px rgba(124,58,237,0.9);
+      animation:pdot 2.5s ease-in-out infinite;
+    }
+    @keyframes pdot {
+      0%,100% { box-shadow:0 0 0 3px rgba(139,92,246,0.2),0 0 14px rgba(124,58,237,0.9); }
+      50%      { box-shadow:0 0 0 6px rgba(139,92,246,0.1),0 0 30px rgba(124,58,237,1.0); }
     }
 
-    .brand h1 {
-      margin: 0;
-      font-size: clamp(1.35rem, 2vw, 2rem);
-      letter-spacing: -0.03em;
+    .hero-title {
+      font-size:clamp(1.65rem,3vw,2.55rem);
+      font-weight:800; letter-spacing:-0.04em; line-height:1.1;
+      margin-bottom:18px;
+      background:linear-gradient(140deg, #ffffff 0%, #ddd6fe 22%, #a78bfa 55%, #c084fc 75%, #f0abfc 100%);
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+      filter:drop-shadow(0 0 48px rgba(124,58,237,0.28));
+    }
+    .hero-body {
+      font-size:0.87rem; color:var(--tx2); line-height:1.85;
+      font-weight:400; max-width:510px;
     }
 
-    .brand p {
-      margin: 4px 0 0;
-      color: var(--muted);
-      font-size: 0.95rem;
+    .hero-stats {
+      display:grid; grid-template-columns:repeat(4,1fr);
+      gap:10px; margin-top:26px;
     }
-
-    .actions {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    button, .button-link {
-      border: 1px solid var(--border);
-      background: var(--panel);
-      color: var(--text);
-      border-radius: 999px;
-      padding: 10px 14px;
-      font-weight: 600;
-      cursor: pointer;
-      text-decoration: none;
-      transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
-    }
-
-    button:hover, .button-link:hover {
-      transform: translateY(-1px);
-      border-color: rgba(255, 153, 0, 0.45);
-    }
-
-    .hero {
-      padding: 36px 0 22px;
-      display: grid;
-      grid-template-columns: 1.25fr 0.95fr;
-      gap: 20px;
-    }
-
-    .hero-card, .panel {
-      background: rgba(255, 255, 255, 0.04);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-    }
-
-    .hero-card {
-      padding: 28px;
-      background:
-        linear-gradient(135deg, rgba(255, 153, 0, 0.11), transparent 40%),
-        linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
-    }
-
-    .hero h2 {
-      margin: 0 0 12px;
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      line-height: 1.02;
-      letter-spacing: -0.04em;
-    }
-
-    .hero p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.7;
-      font-size: 1rem;
-    }
-
-    .hero-grid {
-      margin-top: 24px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 12px;
-    }
-
     .stat {
-      padding: 14px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background:rgba(91,33,182,0.07); border:1px solid rgba(139,92,246,0.14);
+      border-radius:10px; padding:16px 10px; text-align:center;
+      transition:all 0.28s; cursor:default;
     }
-
+    .stat:hover {
+      border-color:rgba(139,92,246,0.42); background:rgba(91,33,182,0.15);
+      transform:translateY(-3px);
+      box-shadow:0 12px 36px rgba(0,0,0,0.5),0 0 40px rgba(124,58,237,0.14);
+    }
     .stat strong {
-      display: block;
-      font-size: 1.4rem;
-      color: var(--accent);
+      display:block; font-size:1.65rem; font-weight:800;
+      letter-spacing:-0.05em; line-height:1; margin-bottom:5px;
+      background:linear-gradient(135deg,#fff,var(--v4));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    .stat span { font-size:0.62rem; color:var(--tx3); text-transform:uppercase; letter-spacing:0.08em; font-family:var(--mono); }
+
+    /* progress card */
+    .prog-card {
+      border-radius:16px; padding:28px;
+      background:linear-gradient(150deg,rgba(91,33,182,0.10) 0%,rgba(10,9,26,0.7) 100%);
+      border:1px solid rgba(139,92,246,0.20);
+      box-shadow:
+        inset 0 1px 0 rgba(167,139,250,0.09),
+        0 0 0 1px rgba(91,33,182,0.05),
+        0 28px 72px rgba(0,0,0,0.65),
+        0 0 100px rgba(124,58,237,0.07);
+      display:flex; flex-direction:column; gap:18px;
+    }
+    .prog-lbl {
+      font-size:0.72rem; font-weight:700; text-transform:uppercase;
+      letter-spacing:0.12em; color:var(--tx2);
+    }
+    .prog-row { display:flex; align-items:baseline; gap:8px; }
+    .prog-num {
+      font-size:3rem; font-weight:800; letter-spacing:-0.06em; line-height:1;
+      background:linear-gradient(135deg,var(--v4),var(--mg));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+      filter:drop-shadow(0 0 24px rgba(124,58,237,0.5));
+    }
+    .prog-of { font-size:0.8rem; color:var(--tx3); font-family:var(--mono); }
+    .prog-sublabel { font-size:0.7rem; color:var(--tx2); font-family:var(--mono); }
+
+    .prog-bar { height:4px; border-radius:99px; background:rgba(139,92,246,0.10); position:relative; }
+    .prog-fill {
+      height:100%; width:0; border-radius:99px;
+      background:linear-gradient(90deg,var(--bl),var(--v2),var(--mg));
+      box-shadow:0 0 8px rgba(139,92,246,0.6),0 0 20px rgba(124,58,237,0.3);
+      transition:width 0.7s cubic-bezier(.4,0,.2,1);
+      position:relative;
+    }
+    .prog-fill::after {
+      content:''; position:absolute; right:-4px; top:50%; transform:translateY(-50%);
+      width:9px; height:9px; border-radius:50%; background:#fff;
+      box-shadow:0 0 8px rgba(139,92,246,0.9),0 0 22px rgba(124,58,237,0.6);
+    }
+    .prog-note { font-size:0.65rem; color:var(--tx3); font-family:var(--mono); }
+
+    .dtiles { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+    .dtile {
+      background:rgba(139,92,246,0.06); border:1px solid rgba(139,92,246,0.12);
+      border-radius:8px; padding:11px 13px; transition:all 0.2s;
+    }
+    .dtile:hover { border-color:rgba(139,92,246,0.28); background:rgba(139,92,246,0.11); }
+    .dtile strong {
+      display:block; font-size:1.15rem; font-weight:800; letter-spacing:-0.03em; margin-bottom:2px;
+      background:linear-gradient(135deg,var(--v5),var(--v2));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    .dtile span { font-size:0.63rem; color:var(--tx3); font-family:var(--mono); }
+
+    /* ── DIVIDER ── */
+    .divider {
+      height:1px; margin:38px 0;
+      background:linear-gradient(90deg, transparent, rgba(139,92,246,0.38) 25%, rgba(217,70,239,0.28) 62%, transparent);
     }
 
-    .stat span {
-      color: var(--muted);
-      font-size: 0.9rem;
+    /* ── SECTION HEAD ── */
+    .sec-head {
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:16px; margin-bottom:18px; flex-wrap:wrap;
+    }
+    .sec-head h3 { font-size:0.95rem; font-weight:700; letter-spacing:-0.01em; color:var(--tx); }
+    .sec-head p { font-size:0.72rem; color:var(--tx2); margin-top:3px; font-family:var(--mono); }
+    .count-pill {
+      font-family:var(--mono); font-size:0.67rem; font-weight:500;
+      background:rgba(91,33,182,0.14); border:1px solid rgba(139,92,246,0.25);
+      color:var(--v4); padding:4px 12px; border-radius:5px; white-space:nowrap;
     }
 
-    .panel {
-      padding: 24px;
-    }
+    /* ── MODULE CARDS ── */
+    .mod-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
 
-    .progress-rail {
-      height: 14px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.08);
-      overflow: hidden;
-      margin: 14px 0 10px;
+    .mod-card {
+      background:var(--s2); border:1px solid rgba(139,92,246,0.10);
+      border-left:2px solid transparent;
+      border-radius:12px; padding:18px;
+      display:flex; flex-direction:column; gap:11px;
+      transition:all 0.28s cubic-bezier(.4,0,.2,1);
+      position:relative; overflow:hidden;
     }
+    .mod-card::before {
+      content:''; position:absolute; top:0; left:0; right:0; height:1px;
+      background:linear-gradient(90deg,transparent,rgba(139,92,246,0),transparent);
+      transition:background 0.3s;
+    }
+    .mod-card:hover {
+      border-color:rgba(139,92,246,0.32); background:var(--s3);
+      transform:translateY(-3px);
+      box-shadow:0 18px 52px rgba(0,0,0,0.55),0 0 0 1px rgba(139,92,246,0.07),0 0 50px rgba(124,58,237,0.09);
+    }
+    .mod-card:hover::before {
+      background:linear-gradient(90deg,transparent,rgba(139,92,246,0.55),transparent);
+    }
+    .dR  { border-left-color:#3b82f6; }
+    .dHP { border-left-color:#7c3aed; }
+    .dS  { border-left-color:#d946ef; }
+    .dCO { border-left-color:#10b981; }
+    .dFu { border-left-color:#f59e0b; }
+    .dTo { border-left-color:rgba(255,255,255,0.12); }
 
-    .progress-fill {
-      height: 100%;
-      width: 0;
-      background: linear-gradient(90deg, var(--accent), #ffd089);
-      transition: width 0.25s ease;
-    }
-
-    .summary {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      margin-top: 18px;
-    }
-
-    .summary .tile {
-      background: var(--panel-2);
-      border-radius: 18px;
-      padding: 14px;
-      border: 1px solid var(--border);
-    }
-
-    .summary strong {
-      font-size: 1.3rem;
-      color: var(--accent);
-      display: block;
-    }
-
-    main {
-      padding: 8px 0 48px;
-    }
-
-    .section-head {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 18px;
-      margin: 20px 0 18px;
-      flex-wrap: wrap;
-    }
-
-    .section-head h3 {
-      margin: 0;
-      font-size: 1.45rem;
-    }
-
-    .section-head p {
-      margin: 6px 0 0;
-      color: var(--muted);
-    }
-
-    .filters {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .filter-chip.active {
-      background: var(--accent);
-      color: #232F3E;
-      border-color: transparent;
-    }
-
-    .module-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
-    .module-card {
-      padding: 18px;
-      border-radius: 22px;
-      border: 1px solid var(--border);
-      background: rgba(255, 255, 255, 0.05);
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .module-top {
-      display: flex;
-      align-items: start;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    .module-num {
-      font-size: 0.85rem;
-      color: var(--accent);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .module-title {
-      margin: 6px 0 0;
-      font-size: 1.05rem;
-      line-height: 1.35;
-    }
+    .mod-top { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
+    .mod-id { font-family:var(--mono); font-size:0.62rem; font-weight:500; color:var(--v4); letter-spacing:0.1em; margin-bottom:5px; }
+    .mod-title { font-size:0.88rem; font-weight:700; color:var(--tx); line-height:1.3; }
 
     .badge {
-      border-radius: 999px;
-      padding: 7px 10px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      white-space: nowrap;
-      border: 1px solid transparent;
+      border-radius:4px; padding:3px 7px; font-size:0.61rem; font-weight:600;
+      font-family:var(--mono); letter-spacing:0.04em; border:1px solid transparent; flex-shrink:0;
     }
+    .bc { background:rgba(16,185,129,0.08); color:#4ade80; border-color:rgba(16,185,129,0.18); }
+    .bp { background:rgba(59,130,246,0.08); color:#93c5fd; border-color:rgba(59,130,246,0.18); }
+    .bn { background:rgba(255,255,255,0.03); color:var(--tx3); border-color:rgba(255,255,255,0.07); }
 
-    .badge.complete { background: rgba(26, 156, 62, 0.16); color: #9ff0b3; border-color: rgba(26, 156, 62, 0.35); }
-    .badge.partial { background: rgba(255, 153, 0, 0.16); color: #ffd089; border-color: rgba(255, 153, 0, 0.35); }
-    .badge.pending { background: rgba(255, 255, 255, 0.08); color: var(--muted); border-color: var(--border); }
+    .mod-desc { font-size:0.78rem; color:var(--tx2); line-height:1.7; flex:1; font-weight:400; }
 
-    .module-card p {
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.6;
-      font-size: 0.95rem;
-      flex: 1;
+    .mod-meta { display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+    .dpill { font-size:0.61rem; font-weight:600; font-family:var(--mono); padding:3px 8px; border-radius:4px; letter-spacing:0.03em; }
+    .pR  { background:rgba(59,130,246,0.09);  color:#93c5fd; }
+    .pHP { background:rgba(124,58,237,0.10);  color:#c4b5fd; }
+    .pS  { background:rgba(217,70,239,0.09);  color:#f0abfc; }
+    .pCO { background:rgba(16,185,129,0.09);  color:#6ee7b7; }
+    .pFu { background:rgba(245,158,11,0.09);  color:#fcd34d; }
+    .pTo { background:rgba(255,255,255,0.04); color:var(--tx2); }
+    .pct-text { font-family:var(--mono); font-size:0.58rem; color:var(--tx3); }
+
+    .file-row { display:flex; gap:5px; flex-wrap:wrap; }
+    .flink {
+      font-size:0.64rem; padding:4px 8px; border-radius:4px;
+      border:1px solid rgba(139,92,246,0.12); background:rgba(91,33,182,0.04);
+      color:var(--tx2); font-family:var(--mono); transition:all 0.15s;
     }
-
-    .module-meta {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
+    .flink:hover { border-color:var(--v3); color:var(--v4); background:rgba(91,33,182,0.12); }
+    .fmore {
+      font-size:0.64rem; padding:4px 8px; border-radius:4px;
+      border:1px solid rgba(255,255,255,0.07); background:transparent;
+      color:var(--tx3); font-family:var(--mono); cursor:pointer; transition:all 0.15s;
     }
+    .fmore:hover { border-color:rgba(139,92,246,0.25); color:var(--tx2); }
 
-    .file-links {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px;
+    .mod-foot { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+    .mod-foot label { display:flex; align-items:center; gap:7px; font-size:0.72rem; color:var(--tx2); cursor:pointer; font-family:var(--mono); }
+    .mod-foot input { width:14px; height:14px; accent-color:var(--gn); }
+    .open-btn {
+      font-size:0.67rem; padding:6px 13px; border-radius:5px;
+      border:1px solid rgba(139,92,246,0.25); background:rgba(91,33,182,0.09);
+      color:var(--v4); font-family:var(--mono); transition:all 0.2s;
     }
-
-    .file-link {
-      font-size: 0.82rem;
-      padding: 8px 10px;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      background: var(--panel-2);
-      color: var(--text);
-      text-decoration: none;
-      text-align: center;
-      transition: border-color 0.2s ease, transform 0.2s ease;
+    .open-btn:hover {
+      border-color:var(--v3); background:rgba(91,33,182,0.20); color:var(--v5);
+      box-shadow:0 0 18px rgba(124,58,237,0.28);
     }
+    .open-btn[aria-disabled] { opacity:0.25; pointer-events:none; }
 
-    .file-link:hover {
-      border-color: rgba(255, 153, 0, 0.45);
-      transform: translateY(-1px);
-    }
-
-    .tag {
-      font-size: 0.75rem;
-      padding: 6px 9px;
-      border-radius: 999px;
-      background: var(--panel-2);
-      border: 1px solid var(--border);
-      color: var(--muted);
-    }
-
-    .module-actions {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .module-actions label {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    .module-actions input {
-      width: 18px;
-      height: 18px;
-      accent-color: var(--success);
-    }
-
-    .module-link[aria-disabled="true"] {
-      opacity: 0.45;
-      pointer-events: none;
-    }
-
-    .simulados {
-      margin-top: 28px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-
+    /* ── SIMULADOS ── */
+    .sim-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
     .sim-card {
-      padding: 18px;
-      border-radius: 22px;
-      border: 1px solid var(--border);
-      background: rgba(255, 255, 255, 0.05);
+      background:var(--s2); border:1px solid rgba(139,92,246,0.11);
+      border-radius:12px; padding:22px;
+      display:flex; flex-direction:column; gap:12px; transition:all 0.25s;
     }
-
-    .sim-card strong {
-      font-size: 1.3rem;
-      display: block;
-      margin-bottom: 8px;
+    .sim-card:hover {
+      border-color:rgba(139,92,246,0.28); background:var(--s3);
+      box-shadow:0 12px 40px rgba(0,0,0,0.45),0 0 32px rgba(124,58,237,0.07);
     }
-
-    .sim-card p {
-      color: var(--muted);
-      line-height: 1.6;
-      min-height: 76px;
+    .sim-title {
+      font-size:0.95rem; font-weight:700;
+      background:linear-gradient(135deg,var(--tx),var(--v4));
+      -webkit-background-clip:text; background-clip:text; color:transparent;
+    }
+    .sim-desc { font-size:0.78rem; color:var(--tx2); line-height:1.7; flex:1; font-weight:400; }
+    .sim-status {
+      font-family:var(--mono); font-size:0.64rem; color:var(--tx3);
+      padding:7px 12px; border:1px solid rgba(255,255,255,0.06);
+      border-radius:5px; text-align:center; letter-spacing:0.04em;
     }
 
     footer {
-      padding: 16px 0 36px;
-      color: var(--muted);
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
+      padding:22px 0 44px; border-top:1px solid rgba(139,92,246,0.08);
+      display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap;
+      font-size:0.67rem; color:var(--tx3); font-family:var(--mono);
     }
+    main { padding:0 0 48px; }
 
-    @media (max-width: 980px) {
-      .hero,
-      .module-grid,
-      .simulados {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-grid,
-      .summary {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    @media (max-width:980px) {
+      .hero, .mod-grid, .sim-grid { grid-template-columns:1fr; }
+      .hero-stats { grid-template-columns:repeat(2,1fr); }
     }
-
-    @media (max-width: 620px) {
-      .hero-grid,
-      .summary {
-        grid-template-columns: 1fr;
-      }
-
-      .shell {
-        width: min(100% - 20px, 1200px);
-      }
-
-      .hero-card,
-      .panel,
-      .module-card,
-      .sim-card {
-        border-radius: 18px;
-      }
+    @media (max-width:600px) {
+      .hero-stats, .dtiles { grid-template-columns:1fr 1fr; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="shell topbar">
+
+<canvas id="stars"></canvas>
+<div class="atmo"></div>
+<div class="grid-bg"></div>
+
+<header>
+  <div class="shell">
+    <div class="topbar">
       <a class="brand" href="#topo">
-        <div class="brand-mark" aria-hidden="true">
-          <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13 45L20 19H28L35 45H29.5L28.2 39.6H20L18.7 45H13ZM21.4 34.9H26.8L24.1 23.8L21.4 34.9Z" fill="currentColor"/>
-            <path d="M38 45V19H44.8C50.7 19 54 21.5 54 26.5C54 29.5 52.5 31.6 50 32.7C53 33.6 55 35.8 55 39.1C55 43.2 51.9 45 46.7 45H38ZM43.3 29.8H45.5C47.8 29.8 49.1 28.8 49.1 26.9C49.1 24.7 47.7 23.9 45.2 23.9H43.3V29.8ZM43.3 40.2H46C48.7 40.2 50 39.2 50 37.1C50 34.8 48.2 33.8 45.6 33.8H43.3V40.2Z" fill="currentColor"/>
-            <path d="M10 50C19 57 45 57 54 50" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+        <div class="hex-logo">
+          <svg class="frame" viewBox="0 0 48 48">
+            <defs>
+              <linearGradient id="hfill" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#2d1b69"/>
+                <stop offset="100%" stop-color="#6d28d9"/>
+              </linearGradient>
+              <linearGradient id="hstroke" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#a78bfa"/>
+                <stop offset="100%" stop-color="#d946ef"/>
+              </linearGradient>
+            </defs>
+            <polygon points="24,2 44,13 44,35 24,46 4,35 4,13" fill="url(#hfill)" stroke="url(#hstroke)" stroke-width="1"/>
+          </svg>
+          <svg class="mark" width="27" height="27" viewBox="0 0 64 64" fill="none">
+            <path d="M13 45L20 19H28L35 45H29.5L28.2 39.6H20L18.7 45H13ZM21.4 34.9H26.8L24.1 23.8L21.4 34.9Z" fill="white"/>
+            <path d="M38 45V19H44.8C50.7 19 54 21.5 54 26.5C54 29.5 52.5 31.6 50 32.7C53 33.6 55 35.8 55 39.1C55 43.2 51.9 45 46.7 45H38ZM43.3 29.8H45.5C47.8 29.8 49.1 28.8 49.1 26.9C49.1 24.7 47.7 23.9 45.2 23.9H43.3V29.8ZM43.3 40.2H46C48.7 40.2 50 39.2 50 37.1C50 34.8 48.2 33.8 45.6 33.8H43.3V40.2Z" fill="white"/>
+            <path d="M10 50C19 57 45 57 54 50" stroke="#FF9900" stroke-width="4" stroke-linecap="round"/>
           </svg>
         </div>
-        <div>
-          <h1>AWS Certified Solutions Architect – Associate</h1>
-          <p>SAA-C03 em Português do Brasil, com foco em arquitetura real.</p>
+        <div class="brand-info">
+          <h1>Solutions Architect – Associate</h1>
+          <p>SAA-C03 · pt-BR · arquitetura real</p>
         </div>
       </a>
       <div class="actions">
-        <button id="themeToggle" type="button">Alternar tema</button>
-        <a class="button-link" href="README.md">README</a>
-        <a class="button-link" href="https://github.com/Thiago-code-lab/aws-saa-c03-studies" target="_blank" rel="noreferrer">Repositório</a>
+        <a class="btn" href="README.md">README</a>
+        <a class="btn" href="https://github.com/Thiago-code-lab/aws-solutions-architect-brasil" target="_blank">Repositório</a>
       </div>
     </div>
-  </header>
-
-  <div class="shell" id="topo">
-    <section class="hero">
-      <article class="hero-card">
-        <h2>Estudo guiado para pensar como arquiteto, não só acertar alternativa.</h2>
-        <p>O exame SAA-C03 cobra decisão técnica contextual: escolher serviço, justificar trade-off, reconhecer gargalo, reduzir custo e manter segurança. Este portal organiza o repositório por módulos, simulados e progresso pessoal salvo no navegador.</p>
-        <div class="hero-grid">
-          <div class="stat"><strong>21</strong><span>Módulos planejados</span></div>
-          <div class="stat"><strong>315</strong><span>Questões totais</span></div>
-          <div class="stat"><strong>6</strong><span>Semanas sugeridas</span></div>
-          <div class="stat"><strong>4</strong><span>Domínios da prova</span></div>
-        </div>
-      </article>
-      <aside class="panel">
-        <h3>📈 Progresso geral</h3>
-        <p id="progressText">0 de 21 módulos concluídos</p>
-        <div class="progress-rail" aria-hidden="true">
-          <div class="progress-fill" id="progressFill"></div>
-        </div>
-        <small>O progresso é salvo em localStorage neste navegador.</small>
-        <div class="summary">
-          <div class="tile"><strong>30%</strong><span>Resilient Architectures</span></div>
-          <div class="tile"><strong>28%</strong><span>High-Performing</span></div>
-          <div class="tile"><strong>24%</strong><span>Secure Applications</span></div>
-          <div class="tile"><strong>18%</strong><span>Cost-Optimized</span></div>
-        </div>
-      </aside>
-    </section>
-
-    <main>
-      <section>
-        <div class="section-head">
-          <div>
-            <h3>📦 Módulos</h3>
-            <p>Marque os módulos concluídos e filtre por domínio para direcionar a revisão.</p>
-          </div>
-          <div class="filters" id="filters"></div>
-        </div>
-        <div class="module-grid" id="moduleGrid"></div>
-      </section>
-
-      <section>
-        <div class="section-head">
-          <div>
-            <h3>🧪 Simulados</h3>
-            <p>Os simulados aparecem aqui assim que forem publicados no repositório.</p>
-          </div>
-        </div>
-        <div class="simulados" id="simulados"></div>
-      </section>
-    </main>
-
-    <footer>
-      <span>Última atualização: 12 de março de 2026</span>
-      <span>GitHub Pages com HTML, CSS e JavaScript puro.</span>
-    </footer>
+    <div class="filter-strip" id="filters"></div>
   </div>
+</header>
 
-  <script>
-    const modules = [
-      { id: "01", icon: "🧭", title: "Introdução SAA-C03", domain: "Fundamentos", status: "complete", folder: "01-Introducao-SAA-C03", description: "Estrutura do exame, domínios, estratégia de estudo e plano de evolução.", tags: ["exam", "strategy"] },
-      { id: "02", icon: "🔐", title: "IAM e Segurança", domain: "Secure", status: "complete", folder: "02-IAM-e-Seguranca", description: "Identidade, autorização, KMS, Organizations e proteção de credenciais.", tags: ["iam", "kms"] },
-      { id: "03", icon: "🖥️", title: "Computação EC2", domain: "High-Performing", status: "complete", folder: "03-Computacao-EC2", description: "Famílias de instância, EBS, AMIs e estratégias de computação.", tags: ["ec2", "ebs"] },
-      { id: "04", icon: "📈", title: "Alta Disponibilidade e Escalabilidade", domain: "Resilient", status: "complete", folder: "04-Alta-Disponibilidade-e-Escalabilidade", description: "ALB, NLB, ASG, health checks e escalabilidade automática.", tags: ["elb", "asg"] },
-      { id: "05", icon: "🌐", title: "VPC e Redes", domain: "Secure", status: "complete", folder: "05-VPC-e-Redes", description: "Subnets, rotas, NAT, segurança em rede e conectividade híbrida.", tags: ["vpc", "network"] },
-      { id: "06", icon: "🗃️", title: "RDS e Bancos Relacionais", domain: "High-Performing", status: "complete", folder: "06-RDS-e-Bancos-Relacionais", description: "RDS, Aurora, Multi-AZ, Read Replica e tuning operacional.", tags: ["rds", "aurora"] },
-      { id: "07", icon: "⚡", title: "DynamoDB", domain: "High-Performing", status: "complete", folder: "07-DynamoDB", description: "Modelagem NoSQL, índices, streams, TTL e padrões de acesso.", tags: ["dynamodb", "nosql"] },
-      { id: "08", icon: "🪣", title: "S3 Avançado", domain: "Cost-Optimized", status: "complete", folder: "08-S3-Avancado", description: "Versioning, lifecycle, eventos, replicação e custo por classe.", tags: ["s3", "storage"] },
-      { id: "09", icon: "🛡️", title: "IAM e Segurança Avançada", domain: "Secure", status: "complete", folder: "09-IAM-e-Seguranca", description: "Boundaries, STS, ABAC, Access Analyzer e serviços de proteção.", tags: ["security", "sts"] },
-      { id: "10", icon: "📨", title: "SQS, SNS e Mensageria", domain: "Resilient", status: "complete", folder: "10-SQS-SNS-Mensageria", description: "Filas, tópicos, DLQ, fan-out e arquitetura orientada a eventos.", tags: ["messaging", "events"] },
-      { id: "11", icon: "🚀", title: "Serverless: Lambda e API Gateway", domain: "Cost-Optimized", status: "complete", folder: "11-Serverless-Lambda-API-Gateway", description: "Funções, integração HTTP, observabilidade e limites práticos.", tags: ["lambda", "api"] },
-      { id: "12", icon: "📊", title: "Dados e Analytics", domain: "High-Performing", status: "complete", folder: "12-Dados-e-Analytics", description: "Athena, Glue, Redshift, Kinesis e arquitetura de dados analítica.", tags: ["analytics", "data"] },
-      { id: "13", icon: "🤖", title: "Machine Learning e IA", domain: "High-Performing", status: "complete", folder: "13-Machine-Learning-e-IA", description: "Serviços gerenciados de IA para visão, texto, voz e LLMs.", tags: ["ai", "ml"] },
-      { id: "14", icon: "📡", title: "Monitoramento: CloudWatch e CloudTrail", domain: "Secure", status: "complete", folder: "14-Monitoramento-CloudWatch-CloudTrail", description: "Logs, métricas, auditoria, rastreamento e conformidade contínua.", tags: ["observability", "audit"] },
-      { id: "15", icon: "🚚", title: "Migração e Transferência", domain: "Cost-Optimized", status: "complete", folder: "15-Migracao-e-Transferencia", description: "DMS, DataSync, MGN, Snow Family e estratégias 6Rs.", tags: ["migration", "transfer"] },
-      { id: "16", icon: "🏛️", title: "Well-Architected Framework", domain: "Resilient", status: "complete", folder: "16-Well-Architected-Framework", description: "Os 6 pilares, avaliações e melhoria contínua de arquitetura.", tags: ["well-architected", "pillars"] },
-      { id: "17", icon: "🏗️", title: "Casos de Uso Reais", domain: "Resilient", status: "complete", folder: "17-Casos-de-Uso-Reais", description: "Arquiteturas completas com trade-offs e padrões de mercado.", tags: ["cases", "architecture"] },
-      { id: "18", icon: "🛠️", title: "Labs Práticos", domain: "Todos", status: "complete", folder: "18-Labs-Praticos", description: "Cenários práticos de troubleshooting e implementação real.", tags: ["hands-on", "labs"] },
-      { id: "19", icon: "📝", title: "Simulados e Questões", domain: "Todos", status: "complete", folder: "19-Simulados-e-Questoes", description: "Banco de questões, simulados guiados e acompanhamento de evolução.", tags: ["mock", "exam"] },
-      { id: "20", icon: "📚", title: "Glossário", domain: "Fundamentos", status: "complete", folder: "20-Glossario", description: "Vocabulário técnico para revisão rápida e interpretação de cenários.", tags: ["glossary", "review"] },
-      { id: "21", icon: "🔗", title: "Recursos e Links", domain: "Fundamentos", status: "complete", folder: "21-Recursos-e-Links", description: "Curadoria de documentação, cursos, comunidades e trilha de estudo.", tags: ["docs", "resources"] }
-    ].map((item) => ({
-      ...item,
-      link: `./${item.folder}/README.md`,
-      files: [
-        { name: "README", path: `./${item.folder}/README.md` },
-        { name: "Questões", path: `./${item.folder}/questoes.md` },
-        { name: "Flashcards", path: `./${item.folder}/flashcards.md` },
-        { name: "Cheatsheet", path: `./${item.folder}/cheatsheet.md` },
-        { name: "Casos", path: `./${item.folder}/casos-de-uso.md` },
-        { name: "Lab", path: `./${item.folder}/lab.md` },
-        { name: "Links", path: `./${item.folder}/links.md` }
-      ]
-    }));
+<div class="shell" id="topo">
+  <section class="hero">
+    <article>
+      <div class="cert-pill">
+        <span class="pulse-dot"></span>
+        AWS CERTIFIED · SAA-C03 · EM PREPARAÇÃO
+      </div>
+      <h2 class="hero-title">Estude para pensar como arquiteto, não só acertar alternativa.</h2>
+      <p class="hero-body">O exame cobra decisão técnica contextual — escolher serviço, justificar trade-off, reconhecer gargalo, reduzir custo e manter segurança. Este portal organiza o repositório por módulos, simulados e progresso pessoal.</p>
+      <div class="hero-stats">
+        <div class="stat"><strong>21</strong><span>Módulos</span></div>
+        <div class="stat"><strong>315</strong><span>Questões</span></div>
+        <div class="stat"><strong>6</strong><span>Semanas</span></div>
+        <div class="stat"><strong>4</strong><span>Domínios</span></div>
+      </div>
+    </article>
 
-    const simulations = [
-      { title: "Simulado 01", info: "65 questões com distribuição proporcional aos domínios do exame.", href: "", status: "Em produção" },
-      { title: "Simulado 02", info: "65 questões com foco em cenários arquiteturais complexos.", href: "", status: "Em produção" },
-      { title: "Simulado 03", info: "65 questões mais desafiadoras, incluindo multi-step reasoning.", href: "", status: "Em produção" }
-    ];
+    <aside class="prog-card">
+      <div class="prog-lbl">Progresso Geral</div>
+      <div>
+        <div class="prog-row">
+          <span class="prog-num" id="progN">0</span>
+          <span class="prog-of">/ 21 módulos</span>
+        </div>
+        <p class="prog-sublabel" id="progSub" style="margin-top:4px;">0 concluídos</p>
+      </div>
+      <div>
+        <div class="prog-bar"><div class="prog-fill" id="progFill"></div></div>
+        <p class="prog-note" style="margin-top:8px;">Salvo em localStorage neste navegador.</p>
+      </div>
+      <div class="dtiles">
+        <div class="dtile"><strong>30%</strong><span>Resilient Architectures</span></div>
+        <div class="dtile"><strong>28%</strong><span>High-Performing</span></div>
+        <div class="dtile"><strong>24%</strong><span>Secure Applications</span></div>
+        <div class="dtile"><strong>18%</strong><span>Cost-Optimized</span></div>
+      </div>
+    </aside>
+  </section>
 
-    const filters = ["Todos", "Fundamentos", "Resilient", "High-Performing", "Secure", "Cost-Optimized", "Todos os módulos publicados"];
-    const grid = document.getElementById("moduleGrid");
-    const filtersBox = document.getElementById("filters");
-    const progressText = document.getElementById("progressText");
-    const progressFill = document.getElementById("progressFill");
-    const simulados = document.getElementById("simulados");
-    const storageKey = "aws-saa-c03-progress";
-    const themeKey = "aws-saa-c03-theme";
-    let activeFilter = "Todos";
-    let progress = JSON.parse(localStorage.getItem(storageKey) || "{}");
+  <main>
+    <div class="divider"></div>
+    <section>
+      <div class="sec-head">
+        <div>
+          <h3>Módulos</h3>
+          <p>Borda colorida por domínio · % da prova · marque os concluídos</p>
+        </div>
+        <span class="count-pill" id="countPill">21 módulos</span>
+      </div>
+      <div class="mod-grid" id="moduleGrid"></div>
+    </section>
+    <div class="divider" style="margin-top:44px;"></div>
+    <section>
+      <div class="sec-head">
+        <div>
+          <h3>Simulados</h3>
+          <p>Publicados conforme ficarem prontos no repositório.</p>
+        </div>
+      </div>
+      <div class="sim-grid" id="simulados"></div>
+    </section>
+  </main>
 
-    const publishedIds = new Set(modules.filter((item) => item.status === "complete" || item.status === "partial").map((item) => item.id));
+  <footer>
+    <span>Última atualização: 12 de março de 2026</span>
+    <span>HTML · CSS · JS puro · GitHub Pages</span>
+  </footer>
+</div>
 
-    function getBadge(status) {
-      if (status === "complete") return { text: "Publicado", className: "complete" };
-      if (status === "partial") return { text: "Parcial", className: "partial" };
-      return { text: "Pendente", className: "pending" };
-    }
-
-    function filteredModules() {
-      return modules.filter((item) => {
-        if (activeFilter === "Todos") return true;
-        if (activeFilter === "Todos os módulos publicados") return publishedIds.has(item.id);
-        return item.domain === activeFilter;
-      });
-    }
-
-    function renderFilters() {
-      filtersBox.innerHTML = "";
-      filters.forEach((filter) => {
-        const chip = document.createElement("button");
-        chip.type = "button";
-        chip.className = `filter-chip${filter === activeFilter ? " active" : ""}`;
-        chip.textContent = filter;
-        chip.addEventListener("click", () => {
-          activeFilter = filter;
-          renderFilters();
-          renderModules();
-        });
-        filtersBox.appendChild(chip);
-      });
-    }
-
-    function renderModules() {
-      grid.innerHTML = "";
-      filteredModules().forEach((item) => {
-        const badge = getBadge(item.status);
-        const checked = Boolean(progress[item.id]);
-        const filesHtml = item.files.map((file) => `<a class="file-link" href="${file.path}">${file.name}</a>`).join("");
-        const card = document.createElement("article");
-        card.className = "module-card";
-        card.innerHTML = `
-          <div class="module-top">
-            <div>
-              <div class="module-num">${item.id} · ${item.icon}</div>
-              <h4 class="module-title">${item.title}</h4>
-            </div>
-            <span class="badge ${badge.className}">${badge.text}</span>
-          </div>
-          <p>${item.description}</p>
-          <div class="module-meta">
-            <span class="tag">${item.domain}</span>
-            ${item.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
-          </div>
-          <div class="file-links">
-            ${filesHtml}
-          </div>
-          <div class="module-actions">
-            <label>
-              <input type="checkbox" data-id="${item.id}" ${checked ? "checked" : ""}>
-              Concluído
-            </label>
-            <a class="button-link module-link" href="${item.link}">Abrir README</a>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
-
-      grid.querySelectorAll("input[type='checkbox']").forEach((checkbox) => {
-        checkbox.addEventListener("change", (event) => {
-          progress[event.target.dataset.id] = event.target.checked;
-          localStorage.setItem(storageKey, JSON.stringify(progress));
-          updateProgress();
-        });
-      });
-    }
-
-    function updateProgress() {
-      const total = modules.length;
-      const done = Object.values(progress).filter(Boolean).length;
-      progressText.textContent = `${done} de ${total} módulos concluídos`;
-      progressFill.style.width = `${(done / total) * 100}%`;
-    }
-
-    function renderSimulations() {
-      simulados.innerHTML = simulations.map((item) => `
-        <article class="sim-card">
-          <strong>${item.title}</strong>
-          <p>${item.info}</p>
-          <a class="button-link module-link" ${item.href ? `href="${item.href}"` : 'aria-disabled="true"'}>${item.href ? "Abrir simulado" : item.status}</a>
-        </article>
-      `).join("");
-    }
-
-    function applyTheme() {
-      const savedTheme = localStorage.getItem(themeKey);
-      if (savedTheme === "light") {
-        document.body.classList.add("light");
-      }
-    }
-
-    document.getElementById("themeToggle").addEventListener("click", () => {
-      document.body.classList.toggle("light");
-      localStorage.setItem(themeKey, document.body.classList.contains("light") ? "light" : "dark");
+<script>
+/* star field */
+(function(){
+  const c=document.getElementById('stars'),ctx=c.getContext('2d');
+  let W,H,stars=[];
+  function resize(){W=c.width=innerWidth;H=c.height=innerHeight;}
+  function mk(){
+    stars=[];
+    const n=Math.floor(W*H/7000);
+    for(let i=0;i<n;i++) stars.push({
+      x:Math.random()*W, y:Math.random()*H,
+      r:Math.random()*0.85+0.15,
+      ph:Math.random()*Math.PI*2,
+      sp:Math.random()*0.006+0.002,
+      purple:Math.random()>0.55
     });
+  }
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    const now=performance.now()/1000;
+    stars.forEach(s=>{
+      const a=Math.sin(now*s.sp*6.28+s.ph)*0.4+0.45;
+      ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+      ctx.fillStyle=s.purple?`rgba(167,139,250,${a})`:`rgba(236,233,255,${a*0.45})`;
+      ctx.fill();
+    });
+    requestAnimationFrame(draw);
+  }
+  resize(); mk(); draw();
+  window.addEventListener('resize',()=>{resize();mk();});
+})();
 
-    applyTheme();
-    renderFilters();
-    renderModules();
-    renderSimulations();
-    updateProgress();
-  </script>
+/* data & render */
+const DPCT={Resilient:"30%","High-Performing":"28%",Secure:"24%","Cost-Optimized":"18%",Fundamentos:"—",Todos:"—"};
+const DCLS={Resilient:"dR","High-Performing":"dHP",Secure:"dS","Cost-Optimized":"dCO",Fundamentos:"dFu",Todos:"dTo"};
+const DPCLS={Resilient:"pR","High-Performing":"pHP",Secure:"pS","Cost-Optimized":"pCO",Fundamentos:"pFu",Todos:"pTo"};
+
+const mods=[
+  {id:"01",title:"Introdução SAA-C03",domain:"Fundamentos",status:"complete",folder:"01-Introducao-SAA-C03",desc:"Estrutura do exame, domínios, estratégia de estudo e plano de evolução."},
+  {id:"02",title:"IAM e Segurança",domain:"Secure",status:"complete",folder:"02-IAM-e-Seguranca",desc:"Identidade, autorização, KMS, Organizations e proteção de credenciais."},
+  {id:"03",title:"Computação EC2",domain:"High-Performing",status:"complete",folder:"03-Computacao-EC2",desc:"Famílias de instância, EBS, AMIs e estratégias de computação."},
+  {id:"04",title:"Alta Disponibilidade e Escalabilidade",domain:"Resilient",status:"complete",folder:"04-Alta-Disponibilidade-e-Escalabilidade",desc:"ALB, NLB, ASG, health checks e escalabilidade automática."},
+  {id:"05",title:"VPC e Redes",domain:"Secure",status:"complete",folder:"05-VPC-e-Redes",desc:"Subnets, rotas, NAT, segurança em rede e conectividade híbrida."},
+  {id:"06",title:"RDS e Bancos Relacionais",domain:"High-Performing",status:"complete",folder:"06-RDS-e-Bancos-Relacionais",desc:"RDS, Aurora, Multi-AZ, Read Replica e tuning operacional."},
+  {id:"07",title:"DynamoDB",domain:"High-Performing",status:"complete",folder:"07-DynamoDB",desc:"Modelagem NoSQL, índices, streams, TTL e padrões de acesso."},
+  {id:"08",title:"S3 Avançado",domain:"Cost-Optimized",status:"complete",folder:"08-S3-Avancado",desc:"Versioning, lifecycle, eventos, replicação e custo por classe."},
+  {id:"09",title:"IAM e Segurança Avançada",domain:"Secure",status:"complete",folder:"09-IAM-e-Seguranca",desc:"Boundaries, STS, ABAC, Access Analyzer e serviços de proteção."},
+  {id:"10",title:"SQS, SNS e Mensageria",domain:"Resilient",status:"complete",folder:"10-SQS-SNS-Mensageria",desc:"Filas, tópicos, DLQ, fan-out e arquitetura orientada a eventos."},
+  {id:"11",title:"Serverless: Lambda e API Gateway",domain:"Cost-Optimized",status:"complete",folder:"11-Serverless-Lambda-API-Gateway",desc:"Funções, integração HTTP, observabilidade e limites práticos."},
+  {id:"12",title:"Dados e Analytics",domain:"High-Performing",status:"complete",folder:"12-Dados-e-Analytics",desc:"Athena, Glue, Redshift, Kinesis e arquitetura de dados analítica."},
+  {id:"13",title:"Machine Learning e IA",domain:"High-Performing",status:"complete",folder:"13-Machine-Learning-e-IA",desc:"Serviços gerenciados de IA para visão, texto, voz e LLMs."},
+  {id:"14",title:"Monitoramento: CloudWatch e CloudTrail",domain:"Secure",status:"complete",folder:"14-Monitoramento-CloudWatch-CloudTrail",desc:"Logs, métricas, auditoria, rastreamento e conformidade contínua."},
+  {id:"15",title:"Migração e Transferência",domain:"Cost-Optimized",status:"complete",folder:"15-Migracao-e-Transferencia",desc:"DMS, DataSync, MGN, Snow Family e estratégias 6Rs."},
+  {id:"16",title:"Well-Architected Framework",domain:"Resilient",status:"complete",folder:"16-Well-Architected-Framework",desc:"Os 6 pilares, avaliações e melhoria contínua de arquitetura."},
+  {id:"17",title:"Casos de Uso Reais",domain:"Resilient",status:"complete",folder:"17-Casos-de-Uso-Reais",desc:"Arquiteturas completas com trade-offs e padrões de mercado."},
+  {id:"18",title:"Labs Práticos",domain:"Todos",status:"complete",folder:"18-Labs-Praticos",desc:"Cenários práticos de troubleshooting e implementação real."},
+  {id:"19",title:"Simulados e Questões",domain:"Todos",status:"complete",folder:"19-Simulados-e-Questoes",desc:"Banco de questões, simulados guiados e acompanhamento de evolução."},
+  {id:"20",title:"Glossário",domain:"Fundamentos",status:"complete",folder:"20-Glossario",desc:"Vocabulário técnico para revisão rápida e interpretação de cenários."},
+  {id:"21",title:"Recursos e Links",domain:"Fundamentos",status:"complete",folder:"21-Recursos-e-Links",desc:"Curadoria de documentação, cursos, comunidades e trilha de estudo."}
+].map(m=>({...m,
+  link:`./${m.folder}/README.md`,
+  files:[
+    {n:"README",p:`./${m.folder}/README.md`},
+    {n:"Questões",p:`./${m.folder}/questoes.md`},
+    {n:"Flashcards",p:`./${m.folder}/flashcards.md`},
+    {n:"Cheatsheet",p:`./${m.folder}/cheatsheet.md`},
+    {n:"Casos",p:`./${m.folder}/casos-de-uso.md`},
+    {n:"Lab",p:`./${m.folder}/lab.md`},
+    {n:"Links",p:`./${m.folder}/links.md`}
+  ]
+}));
+
+const sims=[
+  {title:"Simulado 01",desc:"65 questões com distribuição proporcional aos domínios do exame.",href:"",status:"Em produção"},
+  {title:"Simulado 02",desc:"65 questões com foco em cenários arquiteturais complexos.",href:"",status:"Em produção"},
+  {title:"Simulado 03",desc:"65 questões mais desafiadoras, incluindo multi-step reasoning.",href:"",status:"Em produção"}
+];
+
+const FILTERS=["Todos","Fundamentos","Resilient","High-Performing","Secure","Cost-Optimized"];
+let active="Todos";
+const SK="aws-saa-v4";
+let prog=JSON.parse(localStorage.getItem(SK)||"{}");
+
+function bd(s){ return s==="complete"?{t:"Publicado",c:"bc"}:s==="partial"?{t:"Parcial",c:"bp"}:{t:"Pendente",c:"bn"}; }
+function filtered(){ return active==="Todos"?mods:mods.filter(m=>m.domain===active); }
+
+function renderFilters(){
+  const b=document.getElementById("filters"); b.innerHTML="";
+  FILTERS.forEach(f=>{
+    const el=document.createElement("button");
+    el.type="button"; el.className="chip"+(f===active?" on":""); el.textContent=f;
+    el.addEventListener("click",()=>{active=f;renderFilters();renderMods();});
+    b.appendChild(el);
+  });
+}
+
+function renderMods(){
+  const grid=document.getElementById("moduleGrid");
+  const pill=document.getElementById("countPill");
+  const arr=filtered();
+  pill.textContent=arr.length+" módulo"+(arr.length!==1?"s":"");
+  grid.innerHTML="";
+  arr.forEach(m=>{
+    const b=bd(m.status);
+    const checked=Boolean(prog[m.id]);
+    const pct=DPCT[m.domain]||"—";
+    const card=document.createElement("article");
+    card.className=`mod-card ${DCLS[m.domain]||"dTo"}`;
+    const m3=m.files.slice(0,3), ex=m.files.slice(3);
+    card.innerHTML=`
+      <div class="mod-top">
+        <div><div class="mod-id">${m.id}</div><div class="mod-title">${m.title}</div></div>
+        <span class="badge ${b.c}">${b.t}</span>
+      </div>
+      <p class="mod-desc">${m.desc}</p>
+      <div class="mod-meta">
+        <span class="dpill ${DPCLS[m.domain]||"pTo"}">${m.domain}</span>
+        ${pct!=="—"?`<span class="pct-text">${pct} da prova</span>`:""}
+      </div>
+      <div class="file-row">
+        ${m3.map(f=>`<a class="flink" href="${f.p}">${f.n}</a>`).join("")}
+        ${ex.map(f=>`<a class="flink" href="${f.p}" style="display:none" data-ex="1">${f.n}</a>`).join("")}
+        ${ex.length?`<button class="fmore" data-open="0">+${ex.length}</button>`:""}
+      </div>
+      <div class="mod-foot">
+        <label><input type="checkbox" data-id="${m.id}" ${checked?"checked":""}> Concluído</label>
+        <a class="open-btn" href="${m.link}">Abrir →</a>
+      </div>`;
+    grid.appendChild(card);
+  });
+  grid.querySelectorAll(".fmore").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      const open=btn.dataset.open==="1";
+      btn.closest(".file-row").querySelectorAll("[data-ex]").forEach(el=>el.style.display=open?"none":"inline-flex");
+      const n=btn.closest(".file-row").querySelectorAll("[data-ex]").length;
+      btn.dataset.open=open?"0":"1"; btn.textContent=open?`+${n}`:"–";
+    });
+  });
+  grid.querySelectorAll("input[type='checkbox']").forEach(cb=>{
+    cb.addEventListener("change",e=>{
+      prog[e.target.dataset.id]=e.target.checked;
+      localStorage.setItem(SK,JSON.stringify(prog));
+      updateProg();
+    });
+  });
+}
+
+function updateProg(){
+  const total=mods.length;
+  const done=Object.values(prog).filter(Boolean).length;
+  document.getElementById("progN").textContent=done;
+  document.getElementById("progSub").textContent=`${done} concluído${done!==1?"s":""}`;
+  document.getElementById("progFill").style.width=`${Math.round(done/total*100)}%`;
+}
+
+function renderSims(){
+  document.getElementById("simulados").innerHTML=sims.map(s=>`
+    <article class="sim-card">
+      <div class="sim-title">${s.title}</div>
+      <p class="sim-desc">${s.desc}</p>
+      ${s.href?`<a class="open-btn" href="${s.href}">Abrir →</a>`:`<div class="sim-status">${s.status}</div>`}
+    </article>`).join("");
+}
+
+renderFilters(); renderMods(); renderSims(); updateProg();
+</script>
 </body>
 </html>
