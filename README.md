@@ -2,6 +2,8 @@
 
 > Repositório completo de estudos em Português do Brasil para quem quer passar no exame com entendimento real de arquitetura na AWS.
 
+Portal publicado: https://thiago-code-lab.github.io/aws-solutions-architect-brasil/
+
 ## 🎯 Sobre este Repositório
 
 Este material foi estruturado para um estudante de nível intermediário, que já usa AWS no dia a dia e já domina os fundamentos de cloud. O foco não é memorização cega: o objetivo é desenvolver o raciocínio esperado de um arquiteto de soluções, entendendo trade-offs entre resiliência, desempenho, segurança e custo.
@@ -60,26 +62,26 @@ O repositório foi pensado para funcionar bem no GitHub e no GitHub Pages. Cada 
 | # | Módulo | Domínio predominante | Status | Link |
 |---|---|---|---|---|
 | 01 | Introdução SAA-C03 | Foundation / Estratégia | ✅ Completo | [README](./01-Introducao-SAA-C03/README.md) |
-| 02 | IAM e Segurança | Secure | ⏳ Pendente | Diretório criado |
-| 03 | Computação EC2 | High-Performing | ⏳ Pendente | Diretório criado |
-| 04 | Alta Disponibilidade e Escalabilidade | Resilient | ⏳ Pendente | Diretório criado |
-| 05 | Amazon S3 e Armazenamento | Resilient / Cost | ⏳ Pendente | Diretório criado |
-| 06 | Banco de Dados | High-Performing | ⏳ Pendente | Diretório criado |
-| 07 | VPC e Redes | Secure / Resilient | ⏳ Pendente | Diretório criado |
-| 08 | DNS, Route 53 e CloudFront | Resilient / Performance | ⏳ Pendente | Diretório criado |
-| 09 | Desacoplamento: SQS, SNS, EventBridge | Resilient | ⏳ Pendente | Diretório criado |
-| 10 | Containers: ECS, EKS, Fargate | High-Performing | ⏳ Pendente | Diretório criado |
-| 11 | Serverless: Lambda e API Gateway | Cost / Secure | ⏳ Pendente | Diretório criado |
-| 12 | Dados e Analytics | High-Performing | ⏳ Pendente | Diretório criado |
-| 13 | Machine Learning e IA | Serviços gerenciados | ⏳ Pendente | Diretório criado |
-| 14 | Monitoramento: CloudWatch e CloudTrail | Secure / Ops | ⏳ Pendente | Diretório criado |
-| 15 | Migração e Transferência | Resilient / Cost | ⏳ Pendente | Diretório criado |
-| 16 | Well-Architected Framework | Todos os domínios | ⏳ Pendente | Diretório criado |
-| 17 | Casos de Uso Reais | Todos os domínios | ⏳ Pendente | Diretório criado |
-| 18 | Labs Práticos | Hands-on | ⏳ Pendente | Diretório criado |
-| 19 | Simulados e Questões | Todos os domínios | ⏳ Pendente | Diretório criado |
-| 20 | Glossário | Revisão | ⏳ Pendente | Diretório criado |
-| 21 | Recursos e Links | Revisão | ⏳ Pendente | Diretório criado |
+| 02 | IAM e Segurança | Secure | ✅ Completo | [README](./02-IAM-e-Seguranca/README.md) |
+| 03 | Computação EC2 | High-Performing | ✅ Completo | [README](./03-Computacao-EC2/README.md) |
+| 04 | Alta Disponibilidade e Escalabilidade | Resilient | ✅ Completo | [README](./04-Alta-Disponibilidade-e-Escalabilidade/README.md) |
+| 05 | Amazon S3 e Armazenamento | Resilient / Cost | ✅ Completo | [README](./05-Amazon-S3-e-Armazenamento/README.md) |
+| 06 | Banco de Dados | High-Performing | ✅ Completo | [README](./06-Banco-de-Dados/README.md) |
+| 07 | VPC e Redes | Secure / Resilient | ✅ Completo | [README](./07-VPC-e-Redes/README.md) |
+| 08 | DNS, Route 53 e CloudFront | Resilient / Performance | ✅ Completo | [README](./08-DNS-Route53-e-CloudFront/README.md) |
+| 09 | Desacoplamento: SQS, SNS, EventBridge | Resilient | ✅ Completo | [README](./09-Desacoplamento-SQS-SNS-EventBridge/README.md) |
+| 10 | Containers: ECS, EKS, Fargate | High-Performing | ✅ Completo | [README](./10-Containers-ECS-EKS-Fargate/README.md) |
+| 11 | Serverless: Lambda e API Gateway | Cost / Secure | ✅ Completo | [README](./11-Serverless-Lambda-API-Gateway/README.md) |
+| 12 | Dados e Analytics | High-Performing | ✅ Completo | [README](./12-Dados-e-Analytics/README.md) |
+| 13 | Machine Learning e IA | Serviços gerenciados | ✅ Completo | [README](./13-Machine-Learning-e-IA/README.md) |
+| 14 | Monitoramento: CloudWatch e CloudTrail | Secure / Ops | ✅ Completo | [README](./14-Monitoramento-CloudWatch-CloudTrail/README.md) |
+| 15 | Migração e Transferência | Resilient / Cost | ✅ Completo | [README](./15-Migracao-e-Transferencia/README.md) |
+| 16 | Well-Architected Framework | Todos os domínios | ✅ Completo | [README](./16-Well-Architected-Framework/README.md) |
+| 17 | Casos de Uso Reais | Todos os domínios | ✅ Completo | [README](./17-Casos-de-Uso-Reais/README.md) |
+| 18 | Labs Práticos | Hands-on | ✅ Completo | [README](./18-Labs-Praticos/README.md) |
+| 19 | Simulados e Questões | Todos os domínios | ✅ Completo | [README](./19-Simulados-e-Questoes/README.md) |
+| 20 | Glossário | Revisão | ✅ Completo | [README](./20-Glossario/README.md) |
+| 21 | Recursos e Links | Revisão | ✅ Completo | [README](./21-Recursos-e-Links/README.md) |
 
 ## 🚀 Como Usar Este Repositório
 
