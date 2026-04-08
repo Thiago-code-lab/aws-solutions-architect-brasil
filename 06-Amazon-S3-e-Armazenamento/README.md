@@ -1,5 +1,19 @@
 # Módulo 05 — Amazon S3 e Armazenamento
 
+## Objetivo
+
+Neste módulo, você vai dominar decisões de arquitetura de armazenamento na AWS, escolhendo serviços e classes de armazenamento com base em custo, latência, durabilidade, segurança e requisitos de recuperação para cenários de prova e de produção.
+
+## Serviços AWS principais
+
+- Amazon S3
+- Amazon EFS
+- Amazon FSx
+- AWS Storage Gateway
+- AWS DataSync
+
+## Arquitetura e trade-offs
+
 ## Classes de Armazenamento do S3
 
 O Amazon S3 oferece um espectro de classes que equilibram custo, durabilidade e latência de acesso:
@@ -175,7 +189,7 @@ Dispara notificações em operações de objeto (`s3:ObjectCreated:*`, `s3:Objec
 
 ---
 
-## Dicas de Prova
+## Armadilhas comuns na prova
 
 - **S3 Standard por padrão** — sempre resposta segura quando sem requisitos de custo
 - **One Zone-IA** apenas para dados **reproduzíveis** (thumbnails, transcodificados) — não usar para backup crítico
@@ -186,3 +200,17 @@ Dispara notificações em operações de objeto (`s3:ObjectCreated:*`, `s3:Objec
 - **CRR requer versioning em ambos os buckets**
 - FSx for Lustre: integra com S3 como data repository — HPC lê/escreve direto no Lustre, sincroniza com S3
 - EFS: cobrado por uso real; EBS: cobrado por capacidade provisionada
+
+## Lab hands-on
+
+Para prática guiada, utilize o laboratório de S3 avançado em [07-S3-Avancado-Labs/lab.md](../07-S3-Avancado-Labs/lab.md).
+Notas de custo: priorize arquivos pequenos para testes de lifecycle/replicação, use poucos objetos por etapa e remova buckets, versões e replication rules ao final.
+
+## Questões práticas
+
+- [questoes.md](./questoes.md)
+
+## Revisão rápida / cheatsheet
+
+- [cheatsheet.md](./cheatsheet.md)
+- [flashcards.md](./flashcards.md)

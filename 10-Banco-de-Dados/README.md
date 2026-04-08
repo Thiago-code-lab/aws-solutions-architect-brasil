@@ -1,5 +1,19 @@
 # Módulo 06 — Banco de Dados
 
+## Objetivo
+
+Neste módulo, você vai escolher o serviço de banco de dados correto para cada cenário, equilibrando consistência, escala, latência, disponibilidade e custo em decisões típicas do SAA-C03.
+
+## Serviços AWS principais
+
+- Amazon RDS
+- Amazon Aurora
+- Amazon DynamoDB
+- Amazon ElastiCache
+- Amazon Redshift
+
+## Arquitetura e trade-offs
+
 ## Amazon RDS
 
 Serviço gerenciado para bancos de dados relacionais. Suporta MySQL, PostgreSQL, MariaDB, Oracle, SQL Server e Amazon Aurora.
@@ -210,7 +224,7 @@ MongoDB workload migrado?
 
 ---
 
-## Dicas de Prova
+## Armadilhas comuns na prova
 
 - **RDS Multi-AZ ≠ Read Replica**: Multi-AZ é HA síncrona (standby não lê); Read Replica é escala assíncrona (legível)
 - **Aurora armazena 6 cópias em 3 AZs**, quorum 4/6 para escrita
@@ -222,3 +236,17 @@ MongoDB workload migrado?
 - **Redshift Spectrum** = query em S3 sem carregar no cluster (serverless query on data lake)
 - **QLDB** = ledger imutável — perguntas sobre auditoria de histórico financeiro
 - **RDS Proxy** = conexão pool — ideal para Lambda + RDS
+
+## Lab hands-on
+
+Para prática de banco relacional e modelagem, utilize [11-RDS-e-Bancos-Relacionais-Labs/lab.md](../11-RDS-e-Bancos-Relacionais-Labs/lab.md) e [12-DynamoDB/lab.md](../12-DynamoDB/lab.md).
+Notas de custo: use classes pequenas, mantenha retenção de backup mínima para laboratório e remova instâncias, snapshots e tabelas de teste ao final.
+
+## Questões práticas
+
+- [questoes.md](./questoes.md)
+
+## Revisão rápida / cheatsheet
+
+- [cheatsheet.md](./cheatsheet.md)
+- [flashcards.md](./flashcards.md)

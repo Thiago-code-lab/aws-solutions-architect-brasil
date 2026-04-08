@@ -1,5 +1,19 @@
 # Módulo 07 — VPC e Redes
 
+## Objetivo
+
+Neste módulo, você vai aprender a desenhar redes VPC seguras, resilientes e escaláveis, escolhendo conectividade, segmentação, roteamento e acesso privado corretos para cenários cobrados no exame.
+
+## Serviços AWS principais
+
+- Amazon VPC
+- AWS Transit Gateway
+- AWS Direct Connect
+- AWS Site-to-Site VPN
+- AWS PrivateLink (Interface Endpoints)
+
+## Arquitetura e trade-offs
+
 ## Fundamentos da VPC
 
 Uma VPC (Virtual Private Cloud) é uma rede virtual isolada logicamente dentro da AWS. Cada conta recebe uma **Default VPC** por região.
@@ -184,7 +198,7 @@ Interface de rede virtual que pode ser:
 
 ---
 
-## Dicas de Prova
+## Armadilhas comuns na prova
 
 - **Security Group = stateful** — não precisa de regra de retorno; **NACL = stateless** — precisa de regra de entrada E saída
 - **VPC Peering não é transitivo** — cada par precisa de peering próprio; para muitas VPCs, use TGW
@@ -196,3 +210,17 @@ Interface de rede virtual que pode ser:
 - **Egress-only IGW** = NAT para IPv6 (apenas saída, sem entrada pública)
 - **VPC Flow Logs** não captura conteúdo dos pacotes — apenas metadados (IP, porta, ação)
 - Flow Logs com REJECT = SG ou NACL bloqueou; Flow Logs com ACCEPT mas problema de conectividade = problema na aplicação ou SO
+
+## Lab hands-on
+
+Para prática guiada de rede, utilize [09-VPC-e-Redes-Labs/lab.md](../09-VPC-e-Redes-Labs/lab.md).
+Notas de custo: prefira janelas curtas de teste para NAT Gateway e endpoints, valide rotas com poucos recursos e faça teardown completo ao encerrar.
+
+## Questões práticas
+
+- [questoes.md](./questoes.md)
+
+## Revisão rápida / cheatsheet
+
+- [cheatsheet.md](./cheatsheet.md)
+- [flashcards.md](./flashcards.md)
