@@ -202,4 +202,4 @@ MIT
 - Os exemplos e labs priorizam escolhas de baixo custo para estudo prático.
 - O repositório é atualizado periodicamente conforme mudanças em serviços AWS e no blueprint do exame.
 
-**Última revisão global:** YYYY-MM-DD (mantenedores: atualizar esta data sempre que concluírem uma revisão ampla do repositório).
+**Última revisão global:** 08/04/2026 (atualizar esta data sempre que concluírem uma revisão ampla do repositório).
