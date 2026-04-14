@@ -29,3 +29,7 @@
 
 10. Base de chargeback?
 - Tags de alocacao + CUR.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

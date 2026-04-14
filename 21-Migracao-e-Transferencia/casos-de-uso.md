@@ -242,3 +242,7 @@ CloudWatch Alarm (arquivo não recebido de parceiro crítico em 24h)
 | Manutenção | Patches manuais | Zero |
 | Custo | Servidores + licenças | Por hora + por GB |
 | Auditoria | Logs manuais | CloudTrail nativo |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

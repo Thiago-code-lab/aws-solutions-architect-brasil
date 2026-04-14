@@ -296,3 +296,7 @@ echo "Nada a destruir — sem recursos cloud criados neste lab."
 - Password policy + MFA + key rotation = conta mais segura
 - `simulate-principal-policy` + `auditoria_conta.py` = debugging e governança proativa
 - Antes do exame: consolidar > estudar novo; sono e alimentação impactam desempenho cognitivo
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

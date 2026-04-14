@@ -150,3 +150,7 @@
 | "Anotar dados de imagem para treino" | SageMaker Ground Truth |
 | "NLP em texto clínico médico" | Amazon Comprehend Medical |
 | "Scanner de qualidade de produto na fábrica" | Amazon Lookout for Vision |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

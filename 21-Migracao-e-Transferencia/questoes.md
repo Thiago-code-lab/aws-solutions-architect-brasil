@@ -227,3 +227,7 @@
 **B** — Snowball Edge Compute Optimized: 52 vCPUs, 208 GB RAM, armazenamento de 42 TB + 28 TB NVMe SSD, GPU opcional. Executa EC2 instances (AMIs localmente), Lambda functions e SageMaker inference no edge. Ideal para processar dados de IoT em locais remotos e sincronizar com AWS quando conectividade está disponível.
 
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

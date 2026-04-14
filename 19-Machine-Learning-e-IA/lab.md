@@ -368,3 +368,7 @@ rm -f *.zip *.py /tmp/test_image.jpg
 - Textract extrai texto e pares chave-valor de formulários (muito além de OCR simples)
 - Todos os 3 serviços: pay-per-use, sem provisionamento, integram nativamente com S3
 - Free Tier permite experimentar sem custo: Comprehend 5K unidades/mês, Rekognition 5K imagens
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

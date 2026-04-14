@@ -47,3 +47,7 @@ Fluxo resumido de envelope encryption:
 - [Flashcards](./flashcards.md)
 - [Lab](./lab.md)
 - [Links oficiais](./links.md)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

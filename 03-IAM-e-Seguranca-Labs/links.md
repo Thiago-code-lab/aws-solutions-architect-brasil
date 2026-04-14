@@ -48,3 +48,7 @@
 | Shield Advanced | DDoS avançado + suporte 24/7 | Proteção DDoS premium |
 | Config | Conformidade de configurações | Auditoria de configuração |
 | Security Hub | Agregador de findings de segurança | Visão consolidada |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

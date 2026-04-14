@@ -127,3 +127,7 @@
 
 **P:** O que são Shared Responsibility Areas no Well-Architected?  
 **R:** Well-Architected reconhece que algumas responsabilidades são compartilhadas entre equipes: Dev, Ops, Security e Cloud Center of Excellence (CCoE). Revisões WAT idealmente envolvem: arquiteto de soluções + engenheiro de segurança + representante de negócio. Não é responsabilidade apenas de ops ou apenas de dev. Cultura de arquitetura compartilhada.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

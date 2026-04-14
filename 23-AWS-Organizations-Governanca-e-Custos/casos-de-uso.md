@@ -45,3 +45,7 @@ Arquitetura:
 - CloudTrail org trail
 - bucket de log com Object Lock
 - bloqueios SCP para impedir alteracao de trilha
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

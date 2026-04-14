@@ -141,3 +141,7 @@ Pergunta: "Há login suspeito de IP incomum?"
 | "Detectar EC2 fazendo port scan suspeito" | GuardDuty |
 | "Password/access key rotacionada automaticamente" | Secrets Manager (não Parameter Store) |
 | "Detectar credenciais AWS expostas no GitHub" | GuardDuty FindingType: UnauthorizedAccess |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -281,3 +281,7 @@ aws iam delete-role --role-name "lab-cross-account-readonly"
 - **`simulate-principal-policy`:** ferramenta essencial para depurar permissões sem fazer mudanças reais
 - **AssumeRole:** troca credenciais de longa duração por temporárias; ExternalId previne confused deputy
 - **Regra de avaliação:** Deny explícito > tudo. Sem Allow explícito = Deny implícito = acesso negado
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

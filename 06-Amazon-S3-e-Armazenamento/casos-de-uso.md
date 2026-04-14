@@ -103,3 +103,7 @@ FASE 3 (Pós-migração):
 ```
 
 **Por que Storage Gateway primeiro?** Permite convivência gradual enquanto equipes se adaptam, sem big-bang cutover. DataSync para migração em massa dos dados existentes.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

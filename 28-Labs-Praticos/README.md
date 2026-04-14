@@ -312,3 +312,7 @@ aws dynamodb get-item --table-name Products \
 3. **Terraform destroy** é mais confiável que deletar recursos manualmente um a um
 4. Use `aws configure` para configurar credenciais ou configure variáveis de ambiente: `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_DEFAULT_REGION`
 5. Para verificar custos dos labs: AWS Cost Explorer → Last 7 days → filter by service
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

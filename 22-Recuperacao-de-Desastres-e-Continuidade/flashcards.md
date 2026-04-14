@@ -44,3 +44,7 @@
 
 15. Frase de prova: "regional disaster"?
 - Exige desenho multi-region.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

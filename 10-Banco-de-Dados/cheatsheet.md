@@ -90,3 +90,7 @@
 - ElastiCache Redis Cluster Mode: distribui keyspace em múltiplos shards → maior capacity e write throughput
 - Aurora Serverless v2: escala em ~1 segundo (não requer reinicialização como v1)
 - PITR RDS retention: 1-35 dias; Aurora: até 35 dias
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -127,3 +127,7 @@
 
 **P:** O que é o AWS DataSync Task Schedule vs Task Execution?  
 **R:** **Task:** configuração persistente da transferência (source, destination, options). **Task Execution:** uma rodada de execução da task. **Schedule:** execução periódica automática (cron/rate). Uma Task pode ter múltiplas Executions. Cada execution pode ser: LAUNCHING → PREPARING → TRANSFERRING → VERIFYING → SUCCESS/ERROR.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

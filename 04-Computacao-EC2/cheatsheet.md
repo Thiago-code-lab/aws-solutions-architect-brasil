@@ -131,3 +131,7 @@ http://169.254.169.254/latest/user-data
 - Spot Fleet `capacityOptimized` é preferível para reduzir interrupções vs `lowestPrice`
 - **Dedicated Host** é necessário para BYO-L (license mobility) — não Dedicated Instance
 - Hibernate: RAM salva no EBS → precisa de EBS encriptado + espaço ≥ RAM
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

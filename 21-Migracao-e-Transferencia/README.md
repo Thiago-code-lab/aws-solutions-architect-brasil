@@ -166,3 +166,7 @@ Protocolos de transferência gerenciados para S3 e EFS:
 - DMS com CDC = **zero-downtime migration**: replica ongoing mudanças enquanto testando
 - DataSync preserva metadados (timestamps, permissões); Snow Family não necessariamente
 - **SCT** (Schema Conversion Tool) é separado do DMS — ferramenta desktop para converter DDL e procedimentos
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

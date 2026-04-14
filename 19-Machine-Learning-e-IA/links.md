@@ -60,3 +60,7 @@
 | Busca inteligente em documentos | Kendra |
 | Treinar modelo customizado | SageMaker |
 | Modelos fundacionais / LLMs | Bedrock |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -62,3 +62,7 @@
 | Conectividade dedicada on-premises | Direct Connect |
 | Transferência S3 cross-region | S3 Replication |
 | Migração de banco com zero downtime | DMS + CDC |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

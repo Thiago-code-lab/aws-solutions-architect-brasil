@@ -44,3 +44,7 @@
 - [AWS Solutions Library — Soluções prontas](https://aws.amazon.com/solutions/)
 - [AWS Pricing Calculator](https://calculator.aws/pricing/2/home)
 - [AWS Global Infrastructure Map](https://aws.amazon.com/about-aws/global-infrastructure/)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

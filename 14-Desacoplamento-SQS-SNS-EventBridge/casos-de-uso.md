@@ -125,3 +125,7 @@ Phase 2 (Future):
 ```
 
 **Por que não ir direto para SQS?** Código de produção usa AMQP/STOMP client libraries. Mudar para SQS SDK exigiria refatoração significativa e testes. Amazon MQ = zero mudanças no código.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

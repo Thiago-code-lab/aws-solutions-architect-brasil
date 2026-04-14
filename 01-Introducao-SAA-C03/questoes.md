@@ -314,3 +314,7 @@ Esse é o núcleo do SAA-C03. A prova mede a capacidade de avaliar trade-offs di
 
 **Conceito-chave:** raciocínio arquitetural orientado a trade-offs
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

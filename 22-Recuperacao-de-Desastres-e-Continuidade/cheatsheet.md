@@ -31,3 +31,7 @@
 - "least operational overhead" => servico gerenciado
 - "recover quickly" => warm standby ou active/active
 - "cost-effective" => backup and restore ou pilot light
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

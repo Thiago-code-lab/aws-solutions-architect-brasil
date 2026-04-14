@@ -101,3 +101,7 @@
 
 **P:** Como funciona a Mixed Instance Policy no ASG com Spot?  
 **R:** Define um pool de tipos de instância e a porcentagem de On-Demand vs Spot. O ASG tenta lançar Spot do tipo mais barato disponível. Se interrompido, tenta outro tipo do pool. Estratégia `capacityOptimized` minimiza interrupções escolhendo pools com mais capacidade disponível.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -213,3 +213,7 @@ SNS → Alert se MAPE > 15% (modelo degradando)
 | WAPE | < 10% | Weighted APE (considera volume) |
 | P50 | previsão mediana | 50% confiança |
 | P90 | limite otimista | Para safety stock |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

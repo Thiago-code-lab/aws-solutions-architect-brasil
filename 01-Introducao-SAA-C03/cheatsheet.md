@@ -64,3 +64,7 @@
 | confundir HA com DR | HA não substitui plano multi-region |
 | superestimar serviço raro | concentre-se no núcleo do exame |
 | decorar sem contexto | pratique cenários completos |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -49,3 +49,7 @@ C. Spot apenas
 D. Sem autoscaling
 
 Resposta: B
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

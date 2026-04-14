@@ -256,3 +256,7 @@ rm -f /tmp/config.txt /tmp/config_v1.txt /tmp/documento_privado.txt \
 - **Presigned URL:** permite acesso temporário sem credenciais; expira no tempo definido; auditorado via CloudTrail
 - **S3 Events:** pattern push (S3 → Lambda/SNS/SQS); ideal para pipelines de processamento de arquivos
 - **CRR:** replication cross-region requer versionamento nos dois buckets e IAM role com s3:ReplicateObject
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

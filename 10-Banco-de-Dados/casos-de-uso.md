@@ -119,3 +119,7 @@ Pagamento → API
 ```
 
 **Pattern usado:** Write-through cache (ao detectar novo sinal de fraude, escreve no Redis E DynamoDB simultaneamente). TTL no DynamoDB para expirar sinais antigos automaticamente. DAX poderia substituir Redis+DynamoDB se toda a lógica ficar no DynamoDB.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

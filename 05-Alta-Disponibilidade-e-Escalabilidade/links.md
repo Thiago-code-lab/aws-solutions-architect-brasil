@@ -80,3 +80,7 @@
 | Launch Template > Launch Configuration | Média |
 | PrivateLink exige NLB como backend | Alta |
 | Predictive Scaling requer 14 dias de histórico | Média |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

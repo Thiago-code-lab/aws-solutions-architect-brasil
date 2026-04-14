@@ -205,3 +205,7 @@ CloudWatch Insights (correlação):
 ```
 
 **Descoberta:** `external-card-processor` com timeout de 6s sem retry configurado e sem circuit breaker. Solução: cache de resultados + timeout reduzido + fallback local.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

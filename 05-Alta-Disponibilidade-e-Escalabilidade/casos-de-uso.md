@@ -211,3 +211,7 @@ Benefício: Appliances gerenciados centralmente no Security Hub Account,
 ```
 
 **Conceitos cobrados:** GWLB, GENEVE protocol, VPC Ingress Routing, Security Hub centralizado, appliance transparente
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

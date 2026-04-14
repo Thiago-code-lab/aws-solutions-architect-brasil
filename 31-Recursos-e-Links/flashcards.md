@@ -107,3 +107,7 @@
 
 **P:** Após obter a certificação SAA-C03, como mantê-la válida?  
 **R:** Validade: **3 anos**. Para recertificar: **(1)** Re-fazer o SAA-C03 antes do vencimento. **(2)** Obter uma certificação de nível superior (SAP-C02 Professional) — recertifica automaticamente o SAA. **(3)** Obter outra Associate ou specialty (não recertifica automaticamente). No perfil AWS Certification: pode baixar o certificado digital e badge Credly. Compartilhar no LinkedIn.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

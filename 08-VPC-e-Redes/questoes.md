@@ -229,3 +229,7 @@ Accelerated Site-to-Site VPN usa AWS Global Accelerator para rotear tráfego VPN
 **B — VPC Peerings diretos com Shared**
 3 peerings diretos é simples para este caso: Dev↔Shared, Staging↔Shared, Prod↔Shared. Como peering não é transitivo, Dev, Staging e Prod automaticamente ficam isolados entre si (não há rota Dev→Prod via Shared). Transit Gateway funcionaria mas é mais complexo e tem custo maior para apenas 4 VPCs com roteamento simples.
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -313,3 +313,7 @@ terraform destroy -auto-approve
 - Particionamento (year/month) permite Athena filtrar apenas arquivos relevantes
 - Athena é serverless — zero servidores, paga apenas por queries executadas
 - `bytes_scanned_cutoff_per_query` no Workgroup protege contra queries acidentalmente caras
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

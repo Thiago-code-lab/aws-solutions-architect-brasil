@@ -314,3 +314,7 @@ Elastic IP é um IP público estático que permanece associado à conta mesmo ap
 
 **Conceito-chave:** Elastic IP para IP público permanente na EC2
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

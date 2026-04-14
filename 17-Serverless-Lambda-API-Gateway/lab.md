@@ -346,3 +346,7 @@ aws lambda list-functions --query 'Functions[?contains(FunctionName, `lab`)].Fun
 - IAM Role de Lambda precisa ser explicitamente autorizada (princípio menor privilégio)
 - TTL no DynamoDB expira itens automaticamente (gratuito, sem cobrança extra)
 - `terraform destroy` remove tudo — sempre fazer ao final do lab
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

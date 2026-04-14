@@ -236,3 +236,7 @@ resource "aws_s3_bucket_versioning" "main" {
 **A** — `--exclude` com glob pattern: `aws s3 sync . s3://meu-bucket --exclude "node_modules/*" --exclude ".git/*"`. Cada exclusão é um `--exclude` separado. O padrão usa glob (* e **). Nota: se quiser incluir apenas certos tipos, use `--exclude "*" --include "*.js"`. S3 não tem arquivo .s3ignore.
 
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

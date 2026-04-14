@@ -95,3 +95,7 @@ version account-id interface-id srcaddr dstaddr srcport dstport protocol packets
 - Direct Connect: NÃO criptografa por padrão; adicione VPN sobre DX para criptografia
 - Egress-Only IGW: para IPv6 saída apenas (NAT não existe para IPv6)
 - Route Tables: uma por subnet; subnets sem associação explícita usam a main route table
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -44,3 +44,7 @@ No SAA-C03, redes avancadas aparecem quando o cenario envolve multiplas VPCs, mu
 - [Flashcards](./flashcards.md)
 - [Lab](./lab.md)
 - [Links oficiais](./links.md)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

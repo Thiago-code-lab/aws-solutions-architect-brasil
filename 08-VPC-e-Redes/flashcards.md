@@ -99,3 +99,7 @@
 
 **P:** O que acontece se dois VPCs com CIDRs sobrepostos tentam fazer peering?
 **R:** O peering falha — VPC Peering requer que os CIDRs dos dois VPCs **não se sobreponham**. Mesmo CIDR idêntico ou parcialmente sobreposto impede a criação do peering. Solução: re-endereçar uma das VPCs ou usar AWS PrivateLink (que não requer routeability entre CIDRs)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

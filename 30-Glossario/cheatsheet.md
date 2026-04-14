@@ -155,3 +155,7 @@
 | "escalar leitura banco de dados" | RDS Read Replica (não Multi-AZ) |
 | "SG retorna resposta automaticamente" | Stateful (SG) vs Stateless (NACL) |
 | "conectar múltiplas VPCs como hub-and-spoke" | Transit Gateway (TGW) |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

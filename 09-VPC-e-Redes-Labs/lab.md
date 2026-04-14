@@ -307,3 +307,7 @@ terraform destroy -auto-approve
 - Security Group vs NACL: SG stateful (só ALLOW); NACL stateless (ALLOW e DENY, requer regra de retorno)
 - Bastion Host: ponto único de entrada SSH na subnet pública; Session Manager é alternativa sem bastion
 - VPC Flow Logs: auditoria de tráfego de rede; essencial para troubleshooting e compliance
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

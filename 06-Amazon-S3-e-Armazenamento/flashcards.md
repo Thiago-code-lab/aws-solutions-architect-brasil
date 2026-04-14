@@ -99,3 +99,7 @@
 
 **P:** Qual é a diferença entre EFS e EBS?
 **R:** EFS: NFS4 managed, multi-AZ, acesso concurrent de múltiplas instâncias/AZs, escala automaticamente, Linux only. EBS: block storage, tipicamente acoplado a 1 instância (exceto io2 Multi-Attach), single-AZ, Windows/Linux
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

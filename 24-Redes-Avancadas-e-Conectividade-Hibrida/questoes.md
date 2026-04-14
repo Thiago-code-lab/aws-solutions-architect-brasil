@@ -49,3 +49,7 @@ C. DX principal + VPN backup
 D. Somente internet publica
 
 Resposta: C
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

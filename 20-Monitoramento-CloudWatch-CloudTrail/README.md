@@ -194,3 +194,7 @@ Plano **Business/Enterprise**: todos os checks + programmatic access via API
 - CloudWatch Logs Insights suporta queries like `fields @timestamp | filter level = "ERROR" | sort @timestamp desc | limit 20`
 - Composite Alarms: combinam múltiplos alarmes para reduzir notificações desnecessárias
 - config:// (AWS Config) = snapshot de **recursos**; cloudtrail:// = snapshot de **API actions**
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

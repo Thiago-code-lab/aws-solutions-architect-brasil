@@ -46,3 +46,7 @@
 | Cross-region? | Não (mesmo Multi-AZ) | Sim |
 | Promovível? | Não | Sim (independente) |
 | Downtime no failover | ~1-2 min | N/A |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

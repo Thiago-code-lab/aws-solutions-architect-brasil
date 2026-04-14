@@ -108,3 +108,7 @@ Sem o token (IMDSv1), apenas: `curl http://169.254.169.254/latest/meta-data/inst
 
 **P:** O que é AWS Systems Manager Session Manager?  
 **R:** Permite acesso interativo a instâncias EC2 sem abrir porta 22 (SSH) ou 3389 (RDP). A instância precisa ter o SSM Agent instalado e role IAM com `AmazonSSMManagedInstanceCore`. Acesso via Console ou CLI. Auditado pelo CloudTrail e sessões podem ser logadas no S3/CloudWatch Logs.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

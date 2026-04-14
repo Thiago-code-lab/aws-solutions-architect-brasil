@@ -55,3 +55,7 @@
 | Performance Efficiency | right-sizing, caching, CDN, global reach |
 | Cost Optimization | Reserved Instances, Spot, right-sizing, lifecycle, delete unused |
 | Sustainability | eficiência de hardware, minimizar footprint, região com energia renovável |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -266,3 +266,7 @@ terraform destroy -auto-approve
 - **Snapshot manual vs automático:** snapshots manuais não expiram; automáticos respeitam `backup_retention_period`
 - **Restaurar snapshot:** cria nova instância (não substitui a atual) — RDS sem `UPDATE` de instância in-place
 - **Parameter Group:** configurações do engine (slow query log, max connections) — aplicado com reinicialização (static) ou imediato (dynamic)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

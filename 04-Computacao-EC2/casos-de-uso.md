@@ -207,3 +207,7 @@ Requisitos para hibernate:
 - Hibernate: para de cobrar EC2, RAM preservada → produtividade mantida
 
 **Conceitos cobrados:** EC2 Hibernate, EBS encryption requirement, cost optimization, memory-optimized instances
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

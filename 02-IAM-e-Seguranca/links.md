@@ -84,3 +84,7 @@
 | ACM + CloudFront requer us-east-1 | Alta |
 | aws:PrincipalOrgID para bucket policies | Média |
 | KMS Multi-Region Keys | Média |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -9,3 +9,7 @@
 - Cost and Usage Report (CUR): https://docs.aws.amazon.com/cur/
 - Savings Plans: https://docs.aws.amazon.com/savingsplans/
 - Reserved Instances: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

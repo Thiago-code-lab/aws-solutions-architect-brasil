@@ -300,3 +300,7 @@ rm -f sqs_lab.py
 - **FIFO:** garante ordem (FIFO rigoroso), exactly-once via MessageDeduplicationId; máx 300 TPS sem batching
 - **Standard:** at-least-once, out-of-order, throughput praticamente ilimitado — para maioria dos casos
 - **SNS fan-out:** publicar uma vez → múltiplos consumidores independentes; DLQ no SQS protege mensagens perdidas
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

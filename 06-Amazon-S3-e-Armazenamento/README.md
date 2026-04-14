@@ -214,3 +214,7 @@ Notas de custo: priorize arquivos pequenos para testes de lifecycle/replicação
 
 - [cheatsheet.md](./cheatsheet.md)
 - [flashcards.md](./flashcards.md)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

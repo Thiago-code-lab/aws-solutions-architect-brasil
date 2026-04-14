@@ -99,3 +99,7 @@
 
 **P:** O que é AWS Copilot CLI?
 **R:** CLI que automatiza deploy de aplicações containerizadas no ECS/Fargate seguindo best practices. Cria automaticamente: ECR, Task Definition, ECS Service, ALB, VPC, CodePipeline, SSM/Secrets. Abstrai a complexidade sem remover controle como o App Runner faz
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

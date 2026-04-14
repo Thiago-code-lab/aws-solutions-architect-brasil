@@ -191,3 +191,7 @@ REGRA MNEMÔNICA:
 AWS = "of the cloud" (hardware, rede física, hypervisor, SO managed services)
 Cliente = "in the cloud" (SO EC2, código, dados, config IAM, rede virtual)
 ```
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -106,3 +106,7 @@
 
 **P:** O que significa `"Effect": "Deny"` em uma política IAM vs SCP?  
 **R:** Em ambos os casos, explicit Deny sobrepõe qualquer Allow em qualquer outra política. Em IAM: se qualquer política aplicável tem Deny para a ação, a chamada é negada. Em SCP: Deny bloqueia toda a conta/OU, mesmo que identity policies permitam.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

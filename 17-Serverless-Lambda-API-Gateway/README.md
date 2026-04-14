@@ -220,3 +220,7 @@ Monitoramento:
 - Lambda layers vs container image: container image (até 10 GB) permite empacotar tudo; não usa layers
 - Event Source Mapping com Kinesis/DynamoDB Streams: Lambda processa em shards paralelamente (1 concurrent invoc per shard por default)
 - API Gateway não pode ser acessado diretamente de dentro de VPC sem VPC Link ou Resource Policy
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

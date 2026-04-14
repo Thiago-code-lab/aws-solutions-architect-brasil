@@ -86,3 +86,7 @@
 - Global Accelerator: ideal quando precisa de **IP fixo** para whitelist de firewall
 - Lambda@Edge executa nas **edge locations** (regions específicas); CloudFront Functions em **todos os PoPs**
 - Route 53 TTL baixo antes de migração DNS → acelera propagação de mudanças
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

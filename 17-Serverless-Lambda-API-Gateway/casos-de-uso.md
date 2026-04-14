@@ -201,3 +201,7 @@ EventBridge Scheduler (02:00 UTC diario)
 - Lambda: ~$0.20 por 1M invocações
 - DynamoDB: ~$1.25 write
 - **Total: < $3/dia**
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -205,3 +205,7 @@ Placement Groups:
 - [Links oficiais](./links.md)
 - [Módulo 04: Alta Disponibilidade e Escalabilidade](../04-Alta-Disponibilidade-e-Escalabilidade/)
 - [Módulo 05: Amazon S3 e Armazenamento](../05-Amazon-S3-e-Armazenamento/)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

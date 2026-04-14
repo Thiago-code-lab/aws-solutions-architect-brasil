@@ -29,3 +29,7 @@
 - [Cheatsheet](./cheatsheet.md)
 - [Casos de uso](./casos-de-uso.md)
 - [Lab prático](./lab.md)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

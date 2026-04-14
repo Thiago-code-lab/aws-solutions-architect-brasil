@@ -147,3 +147,7 @@ Protege aplicações web contra exploits OWASP:
 - Resolver DNS de Private Hosted Zone de outra VPC: habilitar **VPC Association** ou usar **Route 53 Resolver** (Inbound/Outbound Endpoints) para on-prem
 - CloudFront pode ter múltiplos origins em um mesmo distribution (path-based routing entre origins)
 - WAF pode ir no ALB **ou** no CloudFront — para proteção closer to edge, use CloudFront + WAF
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

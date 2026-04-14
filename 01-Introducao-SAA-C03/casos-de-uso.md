@@ -91,3 +91,7 @@ Usuários -> IAM Identity Center -> Contas AWS
 ### Trade-offs considerados
 - Mais governança centralizada reduz risco, mas exige desenho de permissões cuidadoso.
 - Políticas excessivamente amplas aceleram o curto prazo e prejudicam compliance.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

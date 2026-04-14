@@ -40,3 +40,7 @@ Cenario:
 Arquitetura:
 - Route 53 Resolver inbound endpoint
 - conditional forwarding no DNS on-premises
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

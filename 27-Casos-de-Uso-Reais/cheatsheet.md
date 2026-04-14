@@ -160,3 +160,7 @@ SQS → Lambda (processa)
 | "múltiplos tenants, custo baixo" | Pool strategy (shared infra, tenantId partition key) |
 | "notificar vários sistemas após evento de pedido" | SNS tópico com múltiplas assinaturas |
 | "transação entre microsserviços com rollback" | Saga Pattern (Step Functions) |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -23,3 +23,7 @@
 - esquecer permissao kms:Decrypt no principal consumidor
 - assumir que criptografar no servico dispensa gestao de acesso
 - ignorar custo de chamadas KMS em alto throughput
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

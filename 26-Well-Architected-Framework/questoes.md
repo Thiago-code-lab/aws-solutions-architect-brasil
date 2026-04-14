@@ -227,3 +227,7 @@
 **C** — Compute Savings Plans de 1 ano: ~66% de desconto vs On-Demand, mais flexível que RI (pode mudar instância type, OS, região dentro do Compute SP). Para carga previsível há 2 anos, algum compromisso é claramente o caminho. 3 anos (D) dá mais desconto mas menos flexibilidade; 1 ano é o ponto de equilíbrio typical recomendado.
 
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

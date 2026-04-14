@@ -127,3 +127,7 @@
 
 **P:** O que é Amazon Redshift Serverless?  
 **R:** Redshift sem necessidade de provisionar ou gerenciar clusters. AWS automaticamente provisiona e escala capacidade baseado na workload. Pay-per-use (RPU-hours — Redshift Processing Units). Ideal para: workloads intermitentes, ambientes de dev/test, analytics esporádicos. Vs cluster: sem gerenciamento, mas custo pode ser maior para workloads constantes.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

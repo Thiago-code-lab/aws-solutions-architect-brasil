@@ -227,3 +227,7 @@
 **B** — Spot Training: SageMaker pode usar Spot Instances (até 90% de desconto) para training jobs. Como Spot pode ser interrompida, checkpoints salvos em S3 permitem retomar o treinamento de onde parou. Para jobs longos de 8 horas, a economia pode ser de 70-90% com pequena complexidade adicional.
 
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

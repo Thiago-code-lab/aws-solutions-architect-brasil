@@ -83,3 +83,7 @@
 ---
 **P:** O que fazer quando duas alternativas parecem corretas?  
 **R:** Releia requisito principal, restrições e palavras qualificadoras do enunciado.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

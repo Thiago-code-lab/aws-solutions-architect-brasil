@@ -53,3 +53,7 @@ No SAA-C03, governanca e custo aparecem junto com seguranca e operacao. A ideia 
 - [Flashcards](./flashcards.md)
 - [Lab](./lab.md)
 - [Links oficiais](./links.md)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

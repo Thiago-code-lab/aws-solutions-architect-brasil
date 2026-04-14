@@ -231,3 +231,7 @@ O README deste módulo contém o simulado completo com 65 questões. Este arquiv
 **B** — AWS inclui questões de "field trial" ou "pre-operational" — questões novas que estão sendo testadas para calibração. Você não sabe quais são pontuadas e quais não são. Implicação: não pule nenhuma questão (mesmo as que parecem muito difíceis podem ser não-pontuadas; mesmo as fáceis são pontuadas). Responda todas.
 
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

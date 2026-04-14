@@ -226,3 +226,7 @@ SQS FIFO garante ordem e deduplicação, 300 TPS (ou 3.000 TPS com batching). Pa
 **B — Delay Queue ou Message Timer**
 **Delay Queue**: delay configurado na fila (padrão 0, máximo 15 minutos) — todas as mensagens aguardam antes de aparecer para consumers. **Message Timer**: delay configurado por mensagem individual sobrescreve o delay da fila. VisibilityTimeout esconde uma mensagem **já recebida**, não antes de entrar. Long Polling máximo é 20 segundos (não 300).
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

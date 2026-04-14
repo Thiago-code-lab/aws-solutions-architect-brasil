@@ -24,3 +24,7 @@ Configurar uma estrutura inicial de governanca e monitoramento financeiro.
 
 - remover budgets de teste
 - desanexar SCP de laboratorio
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

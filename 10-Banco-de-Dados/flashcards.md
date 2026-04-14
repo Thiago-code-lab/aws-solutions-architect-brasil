@@ -99,3 +99,7 @@
 
 **P:** Qual o uso do Amazon Timestream?
 **R:** Time series database serverless. Para IoT data, DevOps metrics, telemetria de application performance. Armazena e analisa trilhões de eventos por dia. Queries com funções de análise temporal built-in
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

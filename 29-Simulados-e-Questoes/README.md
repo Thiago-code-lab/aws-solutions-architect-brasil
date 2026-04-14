@@ -349,3 +349,7 @@
 | 11 | B | 24 | DAX | 37 | AssumeRole | 50 | GW Endpoint | 63 | Lambda |
 | 12 | B | 25 | Service Conn | 38 | Secrets Mgr | 51 | S3 Logging | 64 | VPC Endpoint |
 | 13 | A | 26 | Container | 39 | CMK | 52 | Termination P | 65 | Multi-AZ prod |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

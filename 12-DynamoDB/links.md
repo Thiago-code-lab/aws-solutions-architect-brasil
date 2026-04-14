@@ -48,3 +48,7 @@
 | Eventually Consistent | Padrão — 1/2 do custo em RCU |
 | Strongly Consistent | Dados mais recentes — 1 RCU por 4KB |
 | Transactional Read | 2x RCU — garante atomicidade |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

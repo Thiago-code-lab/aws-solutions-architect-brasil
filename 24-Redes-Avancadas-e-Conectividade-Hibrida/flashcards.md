@@ -29,3 +29,7 @@
 
 10. Backup comum para DX?
 - VPN.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

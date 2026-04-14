@@ -215,3 +215,7 @@ AWS re:Invent (novembro): conferência principal, novidades do ano
 AWS Blogs (aws.amazon.com/blogs): novidades semanais dos serviços
 re:Post: responder perguntas da comunidade (solidificar conhecimento)
 ```
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

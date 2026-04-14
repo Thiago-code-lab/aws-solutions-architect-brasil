@@ -26,3 +26,7 @@ Implementar um failover simples com Route 53 e replicacao de dados em S3.
 
 - remover records/health checks Route 53
 - excluir recursos e buckets para evitar custo
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

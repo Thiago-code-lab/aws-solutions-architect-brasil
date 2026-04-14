@@ -54,3 +54,7 @@
 | Event Sourcing | Imutabilidade de eventos | DynamoDB Streams, Kinesis |
 | Strangler Fig | Migração incremental | API Gateway, ALB |
 | CQRS | Separação leitura/escrita | DynamoDB + ElastiCache |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

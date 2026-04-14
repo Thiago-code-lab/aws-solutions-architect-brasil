@@ -434,3 +434,7 @@ rm -f /tmp/lambda_estoque.zip /tmp/lambda_email.zip
 - **Step Functions Express:** ideal para alta frequência, < 5min; Standard: long-running, exatamente uma vez
 - **Retry + Catch:** Step Functions gerencia resiliência sem código de retry na Lambda
 - **Choice State:** equivalente a `if/else` no workflow — ramifica baseado em dados da execução
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

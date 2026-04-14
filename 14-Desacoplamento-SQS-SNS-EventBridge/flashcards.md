@@ -99,3 +99,7 @@
 
 **P:** O que é EventBridge Pipe?
 **R:** Conexão point-to-point entre uma source (SQS, Kinesis, DynamoDB Streams, Kafka) e um target (Lambda, Step Functions, EventBridge Bus), com filtering e enrichment opcionais no meio. Simplifica pipelines de eventos sem Lambda intermediário apenas para roteamento
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

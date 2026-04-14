@@ -7,3 +7,7 @@
 - AWS Direct Connect: https://docs.aws.amazon.com/directconnect/
 - Route 53 Resolver: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html
 - AWS Networking and Content Delivery: https://aws.amazon.com/products/networking/
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

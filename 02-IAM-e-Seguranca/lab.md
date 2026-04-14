@@ -337,3 +337,7 @@ echo "Cleanup concluído. CMK será deletada em 7 dias."
 - [ ] Qual é a diferença entre `kms:Encrypt` e `kms:GenerateDataKey*`?
 - [ ] Por que o Permission Boundary não é suficiente sozinho? O que mais é necessário?
 - [ ] Em qual cenário `aws:PrincipalOrgID` é mais eficiente do que listar account IDs?
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

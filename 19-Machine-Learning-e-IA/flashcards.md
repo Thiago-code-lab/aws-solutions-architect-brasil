@@ -127,3 +127,7 @@
 
 **P:** O que é o modelo de responsabilidade no Amazon Bedrock (Security)?  
 **R:** **AWS responsável por:** infraestrutura, modelo base, dados de training do FM. **Cliente responsável por:** dados enviados ao modelo (prompts/contexto), dados de fine-tuning, aplicação e respostas geradas. Os prompts e respostas **não são usados para treinar modelos** da AWS (dados privados do cliente). Bedrock é HIPAA/SOC/ISO elegível.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

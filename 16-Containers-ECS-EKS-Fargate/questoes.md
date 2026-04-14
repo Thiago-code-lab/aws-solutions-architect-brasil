@@ -226,3 +226,7 @@ Capacity Provider com Managed Scaling: escala automaticamente o Auto Scaling Gro
 **B — ECR Image Scanning**
 ECR oferece dois tipos de scanning: **Basic** (usa Clair open-source, verifica CVEs do OS) habilitado on-push ou manual. **Enhanced Scanning** (via Amazon Inspector) verifica CVEs no OS e em linguagens de programação (Python packages, Node.js modules, etc.) com resultados no Console Inspector e EventBridge events para automação. Amazon Inspector → ECR = scanning contínuo das imagens.
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

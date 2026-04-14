@@ -152,3 +152,7 @@
 
 **P:** O que é um security finding e como AWS os consolida?  
 **R:** **Finding:** registro de um potencial problema de segurança detectado. Gerado por: GuardDuty (ameaças), Inspector (vulnerabilidades EC2/ECR/Lambda), Macie (dados sensíveis S3), Config (non-compliance), IAM Access Analyzer (permissões excessivas). **AWS Security Hub** consolida todos os findings em um dashboard centralizado, normalizado para AWS Security Finding Format (ASFF).
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

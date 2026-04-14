@@ -56,3 +56,7 @@
 | aws-vault | Storar credenciais seguras | github.com/99designs/aws-vault |
 | Granted | Multi-account profile switching | commonhaus.org/projects/granted |
 | Steampipe | SQL em recursos AWS | steampipe.io |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

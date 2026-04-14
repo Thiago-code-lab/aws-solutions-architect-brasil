@@ -314,3 +314,7 @@ IAM Roles com Instance Profile fornecem credenciais temporárias automaticamente
 
 **Conceito-chave:** Instance Profile + least privilege policy para EC2
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

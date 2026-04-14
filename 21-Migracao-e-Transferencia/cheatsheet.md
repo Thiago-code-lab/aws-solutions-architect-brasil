@@ -125,3 +125,7 @@ Fase 5: MODERNIZE
 | "Acesso contínuo de clientes via FTP para S3" | AWS Transfer Family |
 | "Replicar mudanças de banco em tempo real durante migração" | DMS com CDC |
 | "Dados de sensor edge sem conectividade confiável" | Snowball Edge (Compute Optimized) |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

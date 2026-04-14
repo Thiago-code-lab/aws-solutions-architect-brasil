@@ -304,3 +304,7 @@ rm -f cloudtrail_bucket_policy.json
 - CloudTrail registra TODAS as chamadas de API — fundamental para auditoria
 - Metric Filters transformam eventos de log em métricas (bridge entre logs e alarmes)
 - Config avalia conformidade continuamente — não apenas quando configurado
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

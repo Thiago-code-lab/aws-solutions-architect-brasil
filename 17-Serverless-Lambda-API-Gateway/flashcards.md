@@ -127,3 +127,7 @@
 
 **P:** Como o Lambda Function URL difere do API Gateway?  
 **R:** Function URL: HTTPS endpoint dedicado diretamente para a função (sem API Gateway). Mais simples, menor latência, sem custo de API Gateway. Limitações: sem throttling avançado, sem cache, sem uso de múltiplos estágios, sem integração nativa com WAF (exceto via CloudFront). Use para webhooks simples ou funções com tráfego ocasional.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

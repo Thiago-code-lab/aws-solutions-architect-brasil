@@ -99,3 +99,7 @@
 
 **P:** Como o CloudFront Geo Restriction funciona e qual é a alternativa mais granular?
 **R:** Geo Restriction: bloqueia/permite países via MaxMind GeoIP (retorna 403). Toda a distribution ou por behavior. Alternativa mais granular: integrar Lambda@Edge que checa o header `CloudFront-Viewer-Country` e aplica lógica customizada (ex: redirect para versão localizada, não apenas block)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

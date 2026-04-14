@@ -140,3 +140,7 @@ AWS Organizations
 - CloudFront + ACM → certificado **deve** estar em `us-east-1`
 - KMS Multi-Region Key: mesmo material mas ARNs diferentes por região
 - Secrets Manager cobra por secret; Parameter Store Standard é gratuito
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

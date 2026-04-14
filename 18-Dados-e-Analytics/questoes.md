@@ -227,3 +227,7 @@
 **B** — Migração heterogênea Oracle → Redshift: SCT primeiro para converter DDL, stored procedures e código proprietário Oracle para SQL compatível com Redshift (identifica também o que não pode ser convertido automaticamente). Depois DMS para mover os dados (com suporte a full load e CDC para zero-downtime).
 
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

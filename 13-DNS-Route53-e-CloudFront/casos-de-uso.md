@@ -120,3 +120,7 @@ Internet
 - DRT (DDoS Response Team) da Shield Advanced acessa sua conta para mitigação manual
 - WAF Logs para análise + EventBridge rule para alertas automáticos via SNS
 - Créditos AWS para custos extras de scaling causados pelo DDoS (Shield Advanced benefit)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

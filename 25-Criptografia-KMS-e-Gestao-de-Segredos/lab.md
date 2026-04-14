@@ -22,3 +22,7 @@ Proteger credenciais de aplicacao usando segredo rotacionavel e acesso por role.
 
 - remover segredo de laboratorio
 - remover role/policies e chave criada
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

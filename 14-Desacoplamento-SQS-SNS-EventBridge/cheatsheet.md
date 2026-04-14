@@ -89,3 +89,7 @@ Producer
 - Kinesis Firehose: transforma com Lambda; carrega para S3/Redshift/OpenSearch; near-real-time (buffer)
 - Para evento em tempo real com múltiplos consumers independentes: Kinesis Data Streams > SQS
 - EventBridge Pipe = source → (optional filter + enrich) → target sem Lambda de roteamento
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

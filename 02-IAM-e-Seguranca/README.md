@@ -198,3 +198,7 @@ Fluxo de avaliação de permissão:
 - [Módulo 01: Introdução SAA-C03](../01-Introducao-SAA-C03/)
 - [Módulo 07: VPC e Redes](../07-VPC-e-Redes/)
 - [Módulo 14: Monitoramento](../14-Monitoramento-CloudWatch-CloudTrail/)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

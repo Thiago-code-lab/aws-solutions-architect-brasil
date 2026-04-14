@@ -226,3 +226,7 @@ DynamoDB TTL permite associar um atributo de timestamp a um item; quando o times
 **B — 1 a 2 minutos**
 RDS Multi-AZ failover troca o DNS CNAME para apontar para o standby em ~60-120 segundos. A aplicação reconecta ao mesmo endpoint DNS. Standby já está sincronizado (síncrono), então não há re-sincronização. Zero perda de dados com RPO ≈ 0. Aplicações devem usar JDBC connection retry para absorver o breve downtime.
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

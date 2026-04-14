@@ -301,3 +301,7 @@ rm -f dynamo_lab.py /tmp/stream_handler.zip
 - **TTL:** expiração automática e gratuita via atributo Unix timestamp — não é imediata (até 48h)
 - **Streams:** log imutável de mudanças; integra com Lambda para reação em tempo real (event sourcing)
 - **ConditionExpression:** escrita atômica idempotente — prevent lost updates em concorrência
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

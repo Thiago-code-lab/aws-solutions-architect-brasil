@@ -186,3 +186,7 @@ AWS X-Ray → Distributed tracing
 - **VPC CNI no EKS** = pods com IPs da VPC (como awsvpc no ECS) — importante para segurança e roteamento
 - ECS Auto Scaling escala **tasks**; Capacity Provider escala o **cluster EC2** subjacente automaticamente
 - **Service Connect** = nova alternativa ao App Mesh para comunicação service-to-service no ECS
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

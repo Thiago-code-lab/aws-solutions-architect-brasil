@@ -263,3 +263,7 @@ Dicionário de termos e conceitos essenciais para o exame AWS Solutions Architec
 | WAF | Web Application Firewall |
 | WAT | Well-Architected Tool |
 | WORM | Write Once Read Many |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

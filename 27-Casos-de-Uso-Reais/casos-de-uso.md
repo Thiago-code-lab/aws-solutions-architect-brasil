@@ -210,3 +210,7 @@ Custom: Lambda → CloudWatch Metrics (mensagens/min, respostas enquete)
 | Interatividade | Nativa (timed metadata, chat) | Limitada |
 | Custo | Por hora + GB | Por hora (mais caro para escala) |
 | Quando usar | Lives interativas simples | Broadcasting broadcast TV |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -483,3 +483,7 @@ echo "Cleanup concluído."
 - [ ] Com Target Tracking configurado para ALBRequestCountPerTarget=100, quantas instâncias são necessárias para 500 req/min?
 - [ ] O Lifecycle Hook em `EC2_INSTANCE_LAUNCHING` afeta o scale-in?
 - [ ] Por que o Step Scaling adiciona 1 instância para CPU 80-100% mas 2 para >100%?
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

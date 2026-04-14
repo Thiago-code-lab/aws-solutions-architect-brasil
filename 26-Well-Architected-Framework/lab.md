@@ -334,3 +334,7 @@ echo "Limpeza concluída. Well-Architected Tool, Access Analyzer deletados."
 - **Cost Explorer:** análise por serviço, tag, granularidade diária/mensal, forecasting
 - **Savings Plans:** escolha entre COMPUTE_SP (mais flexível) e EC2_SP (mais barato para tipo fixo)
 - **IAM Access Analyzer:** detecta recursos com acesso externo não intencional (S3, SQS, Lambda, etc.)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

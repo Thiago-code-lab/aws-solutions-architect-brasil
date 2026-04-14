@@ -26,3 +26,7 @@
 - "cost visibility by team" => Cost Allocation Tags + CUR
 - "predictable usage" => RI/Savings Plans
 - "variable workload" => Savings Plans ou on-demand + autoscaling
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -282,3 +282,7 @@ aws iam delete-role --role-name "lab-cicd-deploy-role"
 - **Session Tags:** passadas no AssumeRole; usadas em políticas ABAC com `aws:PrincipalTag`
 - **STS duration:** máximo 12h para roles humanas; padrão 1h para roles de serviço
 - **simulate-principal-policy:** único jeito seguro de testar permissões sem fazer chamadas reais
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -40,3 +40,7 @@ Arquitetura:
 - migrar para Parameter Store/Secrets Manager
 - remover credencial do repositorio
 - uso de IAM role no runtime
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

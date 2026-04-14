@@ -250,3 +250,7 @@ Notas de custo: use classes pequenas, mantenha retenção de backup mínima para
 
 - [cheatsheet.md](./cheatsheet.md)
 - [flashcards.md](./flashcards.md)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

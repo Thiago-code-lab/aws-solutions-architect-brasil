@@ -48,3 +48,7 @@
 | Regras | Apenas ALLOW | ALLOW e DENY |
 | Avaliação | Todas as regras | Por número (ordem) |
 | Retorno | Automático | Precisa de regra explícita |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

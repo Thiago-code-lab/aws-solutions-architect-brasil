@@ -227,3 +227,7 @@
 **B** — AWS: hardware, data centers, rede física, hipervisor, serviços gerenciados. Cliente: IAM (who can access), configuração de SG/NACL, criptografia de dados (em repouso e trânsito), patches do SO em EC2, código da aplicação, configurações de compliance. Em serviços gerenciados (RDS, Lambda), o cliente tem menos responsabilidades de infraestrutura.
 
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

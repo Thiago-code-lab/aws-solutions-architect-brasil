@@ -72,3 +72,7 @@
 - S3 Inventory: liste objetos do bucket de forma assíncrona (diárias/semanais) — alternativa ao LIST API
 - S3 Select: SQL simples sobre objetos S3 (até 50% menos dados transferidos)
 - DataSync: migração de dados on-prem → AWS ou entre serviços AWS (suporta NFS, SMB, HDFS, S3, EFS, FSx)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -314,3 +314,7 @@ O ALB suporta HTTPS como protocolo de target group. Configure o target group com
 
 **Conceito-chave:** target group HTTPS para criptografia end-to-end no ALB
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -136,3 +136,7 @@
 | "Revisar arquitetura contra boas práticas" | Todos os pilares | AWS Well-Architected Tool (WAT) |
 | "RTO < 1 minuto multi-região" | Reliability | Active-Active + Aurora Global Database |
 | "RTO de horas é aceitável para DR" | Reliability | Backup & Restore strategy |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

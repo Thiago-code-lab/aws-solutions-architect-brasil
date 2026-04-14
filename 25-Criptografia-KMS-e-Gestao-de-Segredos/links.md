@@ -8,3 +8,7 @@
 - AWS CloudHSM: https://docs.aws.amazon.com/cloudhsm/
 - Encryption Best Practices: https://docs.aws.amazon.com/prescriptive-guidance/latest/encryption-best-practices/
 - AWS Security Blog: https://aws.amazon.com/blogs/security/
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

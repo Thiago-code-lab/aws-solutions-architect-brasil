@@ -140,3 +140,7 @@ Outras políticas disponíveis: `OldestInstance`, `NewestInstance`, `OldestLaunc
 - **Connection Draining**: se sessões são curtas, reduza para 30s; se longas (uploads), aumente para 900s+
 - **PrivateLink** sempre requer **NLB** como backend — não ALB  
 - ALB pode ter targets **Lambda** — excelente para backends serverless por path
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

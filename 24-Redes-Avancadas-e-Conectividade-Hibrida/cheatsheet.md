@@ -31,3 +31,7 @@
 - "privately access service" => PrivateLink
 - "consistent network performance" => Direct Connect
 - "encrypted connection over internet" => VPN
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

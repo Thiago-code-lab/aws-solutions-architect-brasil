@@ -142,3 +142,7 @@ SHUTDOWN phase → cleanup (response to SIGTERM)
 | "Múltiplos ambientes (dev/staging/prod)" | API GW Stages |
 | "Montar dependências entre funções" | Lambda Layers |
 | "Lambda não deve ser invocada mais de N vezes/s" | Reserved Concurrency |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

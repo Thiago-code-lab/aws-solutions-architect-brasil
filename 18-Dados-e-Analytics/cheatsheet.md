@@ -122,3 +122,7 @@ Fine-Grained Access Control (FGAC) substitui gerenciamento de S3 bucket policies
 | "Segurança granular colunar em data lake" | Lake Formation FGAC |
 | "Stream processing com Apache Flink" | MSF (Managed Apache Flink) |
 | "Oracle → Aurora de forma heterogênea" | SCT (schema) + DMS (dados) |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

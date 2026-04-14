@@ -244,3 +244,7 @@
 **A e B** — Timeout máximo = 15 min e memória máxima = 10 GB. Provisioned Concurrency elimina cold starts mantendo environments pré-aquecidos. Não existe limite de 10 invocações para cold start (C); Lambda em VPC tem o mesmo timeout de 15 min que fora de VPC (D).
 
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -156,3 +156,7 @@
 | "score mínimo de aprovação" | 720/1000 |
 | "quantas questões no exame SAA-C03" | 65 (50 válidas + 15 experimentais) |
 | "tempo total do exame" | 130 minutos |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

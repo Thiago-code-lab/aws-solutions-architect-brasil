@@ -56,3 +56,7 @@
 | Config | Estado de configuração dos recursos | 7 anos (configurável) |
 | GuardDuty | Ameaças de segurança (VPC Flow, DNS, CloudTrail) | 90 dias |
 | X-Ray | Rastreamento de requests distribuídos | 30 dias |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

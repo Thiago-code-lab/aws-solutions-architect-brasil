@@ -175,3 +175,7 @@ Streaming:
 - AQUA (Redshift): hardware acceleration para aggregate queries; disponível apenas em ra3 nodes
 - QuickSight SPICE: dados importados, cache in-memory; refresh configurável (schedule ou manual)
 - Athena Federated Query usa Lambda Data Source Connectors → executa queries em fontes não-S3
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

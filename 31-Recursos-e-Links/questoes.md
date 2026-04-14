@@ -227,3 +227,7 @@
 **B** — Trilhas pós-SAA-C03: (1) Aprofundar arquitetura: SAP-C02 (Professional, mais difícil, foco em enterprise); (2) Foco em desenvolvimento: DVA-C02 (Developer Associate, serverless, CI/CD, SDK); (3) Foco em operações: SOA-C02 (SysOps Administrator Associate); (4) Especialidades: AWS Security Specialty, Data Analytics Specialty. CCP (Cloud Practitioner) é pré-requisito opcional, não obrigatório.
 
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

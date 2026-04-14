@@ -23,3 +23,7 @@ Montar conectividade centralizada entre VPCs e preparar conectividade hibrida.
 
 - remover attachments e TGW
 - remover VPCs e recursos auxiliares
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

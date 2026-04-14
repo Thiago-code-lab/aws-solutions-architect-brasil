@@ -214,3 +214,7 @@ EventBridge → Glue Job (trigger a cada 5min como alternativa simpler)
 | Janelas de tempo | Básico | Avançado (sliding, tumbling) |
 | Custo | DPU/hora | KPU/hora |
 | Quando usar | ETL near-real-time simples | CEP, anomaly detection real-time |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

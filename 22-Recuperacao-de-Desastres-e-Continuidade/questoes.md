@@ -54,3 +54,7 @@ D. Ferramentas third-party sem integracao
 
 Resposta: C
 Motivo: AWS privilegia operacao simplificada quando explicitado.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

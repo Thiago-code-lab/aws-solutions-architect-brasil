@@ -162,3 +162,7 @@ Semana 12:   Simulados completos + revisão final + agenda o exame
 5. Validade: 3 anos (renovar com exame recertification ou exame superior)
 
 **ID do exame**: SAA-C03
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

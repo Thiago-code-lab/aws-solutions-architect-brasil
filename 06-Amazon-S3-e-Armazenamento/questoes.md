@@ -226,3 +226,7 @@ O S3 suporta **3.500 PUT/COPY/POST/DELETE** e **5.500 GET/HEAD** por segundo **p
 **C — S3 Event Notifications**
 S3 Event Notifications dispara eventos em tempo real para SNS, SQS ou Lambda quando objetos são criados, deletados, restaurados, etc. É a forma mais direta e de menor latência. CloudTrail registra chamadas API mas não é para "notificação imediata". EventBridge também pode ser usado (S3 integra com EventBridge) mas a forma mais direta é S3 Event Notifications → Lambda.
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

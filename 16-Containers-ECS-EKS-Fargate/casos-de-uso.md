@@ -146,3 +146,7 @@ Limites App Runner (motivação futura para ECS):
 ```
 App Runner (início) → ECS Fargate (quando precisar de controle) → EKS (quando precisar K8s)
 ```
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

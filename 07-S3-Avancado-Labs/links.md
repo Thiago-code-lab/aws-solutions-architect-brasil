@@ -43,3 +43,7 @@
 | S3 Glacier Flexible | Arquivo | 99.99% | 11 9s | 90 dias | Baixíssimo |
 | S3 Glacier Deep | Arquivo frio | 99.99% | 11 9s | 180 dias | Mínimo |
 | S3 Intelligent | Variável | 99.9% | 11 9s | Nenhuma | Variável |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

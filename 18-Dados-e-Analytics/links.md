@@ -53,3 +53,7 @@
 | QuickSight | Dashboards BI | Segundos |
 | Kinesis Data Streams | Streaming em tempo real | Milissegundos |
 | Kinesis Firehose | ETL stream para storage | Segundos-minutos |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

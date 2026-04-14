@@ -293,3 +293,7 @@ aws iam simulate-principal-policy \
 | "estado de infra compartilhado entre equipes" | Terraform state em S3 + DynamoDB lock |
 | "debug erro 403 S3" | Checar bucket policy + Block Public Access + IAM |
 | "ECS task para logo após iniciar" | Ver stoppedReason + CloudWatch Logs /ecs/ |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

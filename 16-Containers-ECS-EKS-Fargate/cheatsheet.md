@@ -110,3 +110,7 @@
 - Dynamic port mapping (ECS EC2 bridge mode): ALB target type = "instance"; com awsvpc = target type "ip"
 - Para segredos em tasks: referenciar Secrets Manager/SSM na Task Definition (Execution Role com permissão)
 - **ECR + VPC Endpoint**: instâncias em subnet privada fazem pull de imagens ECR sem NAT/internet
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

@@ -228,3 +228,7 @@ Internet                   VPC Privada
 ```
 
 **Conceitos cobrados:** resource-based policy, aws:SourceVpce, VPC Gateway Endpoint para S3, zero-trust
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

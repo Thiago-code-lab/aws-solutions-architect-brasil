@@ -184,3 +184,7 @@ Broker de mensagens gerenciado compatível com protocolos de mensageria abertos:
 - **Kinesis Data Streams** para real-time analytics + replay; **Firehose** para near-real-time → S3/Redshift
 - **Hot shard no Kinesis** = partition key com baixa cardinalidade (ex: apenas "user"/"event") — distribuir melhor as chaves
 - **Amazon MQ** = migração lift-and-shift de ActiveMQ/RabbitMQ; para novos projetos, use SQS/SNS
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

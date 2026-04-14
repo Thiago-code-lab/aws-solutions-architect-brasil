@@ -77,3 +77,7 @@
 | Partition PG para HDFS/Cassandra/Kafka | Média |
 | Compute Savings Plans vs EC2 Instance SP | Média |
 | st1 para throughput sequencial (não boot) | Alta |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

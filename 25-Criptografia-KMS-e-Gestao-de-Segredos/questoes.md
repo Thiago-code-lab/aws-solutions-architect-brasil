@@ -49,3 +49,7 @@ C. NACL
 D. S3 bucket policy
 
 Resposta: B
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

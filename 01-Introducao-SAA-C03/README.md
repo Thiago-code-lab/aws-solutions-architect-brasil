@@ -133,3 +133,7 @@ O diagrama abaixo representa a forma como o exame costuma conectar os principais
 - [Módulo 02: IAM e Segurança](../02-IAM-e-Seguranca/)
 - [Módulo 16: Well-Architected Framework](../16-Well-Architected-Framework/)
 - [Módulo 19: Simulados e Questões](../19-Simulados-e-Questoes/)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

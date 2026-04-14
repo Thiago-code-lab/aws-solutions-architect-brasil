@@ -167,3 +167,7 @@ terraform destroy -var="alert_email=seu-email@exemplo.com"
 ## 💰 Custo Estimado
 
 Se o bucket estiver praticamente vazio e o tópico SNS tiver baixo volume, o custo por 1 hora tende a ser muito próximo de zero. O componente mais sensível costuma ser o AWS Budgets, dependendo da conta e do tipo de uso. Em termos práticos, é um lab de custo muito baixo, mas ainda assim deve ser limpo ao final.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

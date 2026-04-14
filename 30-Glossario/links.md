@@ -48,3 +48,7 @@
 - [AWS Certification Prep — Vocabulary Flashcards (Quizlet)](https://quizlet.com/subject/aws-certification/)
 - [AWS Skill Builder — Foundations](https://explore.skillbuilder.aws/)
 - [Tutorials Dojo — AWS Cheat Sheets Hub](https://tutorialsdojo.com/aws-cheat-sheets/)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

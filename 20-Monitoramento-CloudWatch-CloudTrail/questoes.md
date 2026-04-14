@@ -227,3 +227,7 @@
 **A** — S3 Object Lock em modo Compliance com retention period: **nem o root account** pode deletar ou sobrescrever objetos durante o período de retenção. É a única forma de garantir imutabilidade absoluta. MFA Delete (C) e Versioning (D) ainda permitem deleção por admins autorizados.
 
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

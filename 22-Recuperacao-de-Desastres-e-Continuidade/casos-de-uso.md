@@ -58,3 +58,7 @@ Arquitetura recomendada:
 
 Por que funciona:
 - acelera estrategia de DR sem refatoracao imediata
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

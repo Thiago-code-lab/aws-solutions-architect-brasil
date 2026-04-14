@@ -226,3 +226,7 @@ Cada CloudFront Behavior tem "Viewer Protocol Policy" com opções: HTTP and HTT
 **A — CNAME (ACM) e MX (email)**
 ACM (AWS Certificate Manager) oferece validação de domínio via CNAME: você adiciona o CNAME gerado pelo ACM ao seu DNS e a AWS verifica periodicamente. MX records apontam para servidores de email (ex: SES, Office 365, Google Workspace) e são obrigatórios para receber email no domínio. TXT records são usados para SPF/DKIM/verificação de domínio em outros serviços.
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

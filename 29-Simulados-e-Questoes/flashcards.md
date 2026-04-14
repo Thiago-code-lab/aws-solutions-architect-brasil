@@ -127,3 +127,7 @@
 
 **P:** Como o exame testa o princípio de least privilege?  
 **R:** Cenários: **(1)** EC2 precisa ler apenas um bucket S3 → IAM Role com `s3:GetObject` naquele bucket específico (não `s3:*` ou AdministratorAccess). **(2)** Lambda precisa escrever no DynamoDB → `dynamodb:PutItem` na tabela específica (não full access). **(3)** Cross-account: trust policy + permission policy combinados. Sempre: **mínimo necessário para o mínimo de tempo necessário**.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

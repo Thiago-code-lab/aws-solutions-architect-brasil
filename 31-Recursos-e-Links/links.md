@@ -80,3 +80,7 @@
 | 4 | 16-21 | Well-Architected, Casos de Uso, Revisão |
 | 5 | Todos | Simulados (meta: 70%+ no Tutorials Dojo) |
 | 6 | Fracos | Revisão específica dos pontos fracos + exame |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

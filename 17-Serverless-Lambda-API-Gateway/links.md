@@ -49,3 +49,7 @@
 | API GW payload máximo | 10 MB |
 | Lambda /tmp storage | 512 MB (padrão) / 10 GB (máx) |
 | Lambda conc. por conta | 1.000 (padrão, ajustável) |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

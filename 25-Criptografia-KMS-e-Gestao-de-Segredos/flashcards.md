@@ -29,3 +29,7 @@
 
 10. Quando usar Secrets Manager no exame?
 - Quando ha exigencia de rotacao automatica.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

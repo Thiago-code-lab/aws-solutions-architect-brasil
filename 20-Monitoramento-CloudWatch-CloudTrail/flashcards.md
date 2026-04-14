@@ -127,3 +127,7 @@
 
 **P:** Qual a diferença entre CloudWatch Logs e CloudTrail para auditoria de segurança?  
 **R:** **CloudTrail:** auditoria de ações na AWS (API calls, console logins, IAM changes). Respondem: "foi deletado/modificado? Por quem? Quando?". **CloudWatch Logs:** logs de aplicações, OS, serviços AWS (VPC Flow Logs, ALB access logs). Respondem: "o que aconteceu dentro da aplicação?". Para auditoria completa: CloudTrail (quem fez o quê) + CloudWatch Logs (o que aconteceu no sistema).
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

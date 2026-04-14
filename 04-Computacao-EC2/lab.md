@@ -375,3 +375,7 @@ echo "Cleanup concluído!"
 - [ ] No Partition Placement Group, instâncias de partições diferentes compartilham hardware?
 - [ ] Por que usar `launch_template` em vez de `launch_configuration` no Terraform?
 - [ ] O que acontece com os dados do volume gp3 quando `delete_on_termination = true`?
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

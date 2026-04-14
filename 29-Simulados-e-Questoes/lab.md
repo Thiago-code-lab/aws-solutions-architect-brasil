@@ -310,3 +310,7 @@ rm -f quiz.py
 - CloudWatch Dashboards via CLI com JSON body — codificável, versionável em Git
 - Padrão de estudo active recall: exposição → ocultação → tentativa → feedback
 - No exame: **70%+ em simulados Tutorials Dojo = alta probabilidade de aprovação no SAA-C03**
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

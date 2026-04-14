@@ -166,3 +166,7 @@ Foundation Models (FM) via API — IA Generativa:
 - SageMaker Managed Spot Training: usa Spot instances para training jobs → até 90% redução de custo; checkpointing necessário para retomar após interrupção
 - **Comprehend PII**: detecta/redige dados sensíveis em texto (ex: conformidade LGPD/GDPR)
 - **Amazon Connect + Lex**: call center automatizado; sem infra de telefonia para gerenciar
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

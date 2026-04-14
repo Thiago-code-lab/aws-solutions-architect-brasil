@@ -218,3 +218,7 @@ Internet / Clientes
 - [Módulo 03: Computação EC2](../03-Computacao-EC2/)
 - [Módulo 07: VPC e Redes](../07-VPC-e-Redes/)
 - [Módulo 08: DNS, Route 53 e CloudFront](../08-DNS-Route53-e-CloudFront/)
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

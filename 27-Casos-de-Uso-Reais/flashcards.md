@@ -127,3 +127,7 @@
 
 **P:** Como o exame testa conhecimento de arquiteturas multi-camada (3-tier)?  
 **R:** **Presentation:** CloudFront + S3 (SPA) ou ALB. **Application:** EC2 ASG ou ECS em subnets privadas (sem acesso direto à internet). **Data:** RDS em subnet de dados privada (aceita conexão apenas do SG da camada application). O exame testa: fluxo de SGs correto, que bancos ficam em subnets privadas, que ALB fica em subnet pública, que EC2 de aplicação não precisa de IP público.
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

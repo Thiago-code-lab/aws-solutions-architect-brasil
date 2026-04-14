@@ -44,3 +44,7 @@
 | Consumers | Pull | Pull | Push (subscriptions) | Push (rules) |
 | Uso típico | Desacoplamento | Pagamentos, pedidos | Notificações, fan-out | Eventos de serviços AWS |
 | Retenção msg | 1 min–14 dias | 1 min–14 dias | N/A | N/A |
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

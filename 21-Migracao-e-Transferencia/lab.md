@@ -406,3 +406,7 @@ rm -f /tmp/arquivo_*.txt
 - DMS suporta migrações homo e heterogêneas (SCT necessário para heterogêneas)
 - `aws s3 sync` é idempotente — só transfere arquivos novos ou modificados
 - Replication instance é cobrada por hora mesmo sem tasks rodando — destruir após uso
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

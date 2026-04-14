@@ -227,3 +227,7 @@
 **C** — Conformidade HIPAA completa: DynamoDB com KMS CMK (chave gerenciada pelo cliente = controle total de criptografia); IAM com condições (`dynamodb:LeadingKeys` para restringir por patient_id do médico-paciente); CloudTrail Data Events: registra todas as leituras no DynamoDB; AWS Artifact: obtém documentos BAA (Business Associate Agreement) necessários para HIPAA.
 
 </details>
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+

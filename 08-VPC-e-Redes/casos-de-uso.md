@@ -131,3 +131,7 @@ WHERE action = 'REJECT' AND day >= '2024-01-01'
 GROUP BY 1, 2, 3, 4
 ORDER BY bytes DESC LIMIT 10
 ```
+
+---
+_Credito autoral: Thiago Cardoso - [LinkedIn](https://www.linkedin.com/in/analyticsthiagocardoso)_
+
