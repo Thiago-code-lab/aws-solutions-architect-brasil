@@ -1,4 +1,4 @@
-# Lab Prático — Simulados e Revisão Final: Setup Ambiente de Estudos (Módulo 19)
+# Lab Prático — Simulados e Revisão Final: Setup Ambiente de Estudos (Módulo 29)
 
 > **Região:** us-east-1 | **Custo estimado:** ~$0.01 (DynamoDB on-demand, Lambda minimal)  
 > **Pré-requisitos:** AWS CLI configurado, Python 3.8+, pip

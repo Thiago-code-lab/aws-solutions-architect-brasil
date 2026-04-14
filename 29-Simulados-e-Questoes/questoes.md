@@ -1,4 +1,4 @@
-# Questões — Módulo 19: Simulados e Questões
+# Questões — Módulo 29: Simulados e Questões
 
 > Estratégia de estudo para a prova
 
@@ -6,7 +6,7 @@
 
 **Sobre as questões do simulado**
 
-O README deste módulo contém o simulado completo com 65 questões. Este arquivo contém questões adicionais de estratégia de prova e meta-perguntas sobre o formato do exame.
+O README deste módulo contém o simulado completo com 65 questões. Este arquivo reúne questões complementares de estratégia de prova e meta-perguntas sobre o formato do exame.
 
 ---
 

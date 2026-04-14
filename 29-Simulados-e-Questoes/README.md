@@ -1,4 +1,9 @@
-# Módulo 19 — Simulados e Questões
+# Módulo 29 — Simulados e Questões
+
+## Onde está cada conteúdo
+
+- Este arquivo (`README.md`) contém o **Simulado Completo 1** com 65 questões no estilo SAA-C03.
+- O arquivo `questoes.md` contém **questões complementares de estratégia de prova** (meta-perguntas sobre abordagem e formato do exame).
 
 ## Estratégia para o Exame SAA-C03
 
