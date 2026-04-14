@@ -21,7 +21,7 @@ Você pode usar a chave aleatória abaixo ou escanear o QR Code:
 `c8ca2085-c329-4712-8da9-397d10b41cf5`
 
 <p align="center">
-  <img width="250" height="250" alt="QR Code Pix" src="https://github.com/user-attachments/assets/57e2fa14-514e-40f7-b09e-15cdab752e69" />
+<img width="250" height="250" alt="Image" src="https://github.com/user-attachments/assets/351596f0-5896-404b-ab19-d55a661d5b9b" />
 </p>
 
 ---
