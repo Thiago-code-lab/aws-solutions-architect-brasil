@@ -1,4 +1,4 @@
-# Lab Prático — Well-Architected Framework: WAT + Trusted Advisor + Cost Explorer (Módulo 16)
+# Lab Prático — Well-Architected Framework: WAT + Trusted Advisor + Cost Explorer (Módulo 26)
 
 > **Região:** us-east-1 | **Custo estimado:** ~$0 (Well-Architected Tool, Trusted Advisor e Cost Explorer são gratuitos)  
 > **Pré-requisitos:** AWS CLI configurado, conta com acesso à console

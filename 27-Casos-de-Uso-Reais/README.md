@@ -1,4 +1,4 @@
-# Módulo 17 — Casos de Uso Reais: Arquiteturas Multi-Serviço
+# Módulo 27 — Casos de Uso Reais: Arquiteturas Multi-Serviço
 
 ## Sobre Este Módulo
 

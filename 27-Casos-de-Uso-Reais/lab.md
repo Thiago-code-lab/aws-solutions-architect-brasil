@@ -1,4 +1,4 @@
-# Lab Prático — Casos de Uso Reais: SNS Fan-out + Step Functions + EventBridge (Módulo 17)
+# Lab Prático — Casos de Uso Reais: SNS Fan-out + Step Functions + EventBridge (Módulo 27)
 
 > **Região:** us-east-1 | **Custo estimado:** ~$0.01 (Step Functions Express, SNS, SQS — volumes de lab)  
 > **Pré-requisitos:** AWS CLI configurado, Terraform >= 1.5

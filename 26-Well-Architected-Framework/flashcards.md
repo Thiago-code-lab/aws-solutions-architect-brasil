@@ -1,4 +1,4 @@
-# Flashcards — Módulo 16: Well-Architected Framework
+# Flashcards — Módulo 26: Well-Architected Framework
 
 > **Formato:** P = Pergunta | R = Resposta  
 > **Total:** 25 flashcards

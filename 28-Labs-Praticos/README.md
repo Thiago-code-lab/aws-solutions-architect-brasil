@@ -1,4 +1,4 @@
-# Módulo 18 — Labs Práticos
+# Módulo 28 — Labs Práticos
 
 ## Sobre Este Módulo
 

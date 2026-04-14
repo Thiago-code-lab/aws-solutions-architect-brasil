@@ -1,4 +1,4 @@
-# Módulo 16 — AWS Well-Architected Framework
+# Módulo 26 — AWS Well-Architected Framework
 
 ## Os 6 Pilares
 

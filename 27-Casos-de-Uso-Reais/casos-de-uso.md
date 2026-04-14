@@ -1,4 +1,4 @@
-# Casos de Uso Reais — Arquiteturas Multi-Serviço (Módulo 17)
+# Casos de Uso Reais — Arquiteturas Multi-Serviço (Módulo 27)
 
 ## Caso 1 — Plataforma SaaS Multi-Tenant com Isolamento por Tier
 

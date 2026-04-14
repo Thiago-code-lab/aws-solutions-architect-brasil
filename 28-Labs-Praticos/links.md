@@ -1,4 +1,4 @@
-# Links e Recursos — Labs Práticos (Módulo 18)
+# Links e Recursos — Labs Práticos (Módulo 28)
 
 ## Ferramentas para Labs
 

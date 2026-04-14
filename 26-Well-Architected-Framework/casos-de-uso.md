@@ -1,4 +1,4 @@
-# Casos de Uso Reais — Well-Architected Framework (Módulo 16)
+# Casos de Uso Reais — Well-Architected Framework (Módulo 26)
 
 ## Caso 1 — Revisão Well-Architected de Startup em Crescimento
 

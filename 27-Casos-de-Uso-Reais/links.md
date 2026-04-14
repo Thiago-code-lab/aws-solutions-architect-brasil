@@ -1,4 +1,4 @@
-# Links e Recursos — Casos de Uso Reais (Módulo 17)
+# Links e Recursos — Casos de Uso Reais (Módulo 27)
 
 ## Documentação Oficial AWS
 

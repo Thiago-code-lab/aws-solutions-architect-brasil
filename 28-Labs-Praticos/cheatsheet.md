@@ -1,4 +1,4 @@
-# Cheatsheet — Labs Práticos (Módulo 18)
+# Cheatsheet — Labs Práticos (Módulo 28)
 
 ## Comandos AWS CLI — Referência Rápida
 

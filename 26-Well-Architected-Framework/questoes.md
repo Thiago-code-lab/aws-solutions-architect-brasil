@@ -1,4 +1,4 @@
-# Questões — Módulo 16: Well-Architected Framework
+# Questões — Módulo 26: Well-Architected Framework
 
 > **Domínio SAA-C03**: Todos os domínios (framework transversal)  
 > **Dificuldade**: Média-Alta

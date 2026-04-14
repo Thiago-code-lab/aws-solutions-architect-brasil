@@ -1,4 +1,4 @@
-# Links e Recursos — Well-Architected Framework (Módulo 16)
+# Links e Recursos — Well-Architected Framework (Módulo 26)
 
 ## Documentação Oficial AWS
 

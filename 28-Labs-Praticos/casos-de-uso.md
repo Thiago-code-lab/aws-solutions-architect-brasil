@@ -1,4 +1,4 @@
-# Casos de Uso Reais — Labs Práticos (Módulo 18)
+# Casos de Uso Reais — Labs Práticos (Módulo 28)
 
 ## Caso 1 — Debug: Lambda não consegue acessar RDS
 

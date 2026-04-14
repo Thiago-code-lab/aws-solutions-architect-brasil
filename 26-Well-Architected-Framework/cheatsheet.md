@@ -1,4 +1,4 @@
-# Cheatsheet — Módulo 16: Well-Architected Framework
+# Cheatsheet — Módulo 26: Well-Architected Framework
 
 ## Os 6 Pilares — Resumo
 

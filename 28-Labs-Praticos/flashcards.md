@@ -1,4 +1,4 @@
-# Flashcards — Módulo 18: Labs Práticos
+# Flashcards — Módulo 28: Labs Práticos
 
 > **Formato:** P = Pergunta | R = Resposta  
 > **Total:** 25 flashcards

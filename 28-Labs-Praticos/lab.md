@@ -1,4 +1,4 @@
-# Lab Prático — Diagnóstico e Debugging: Ambientes Quebrados (Módulo 18)
+# Lab Prático — Diagnóstico e Debugging: Ambientes Quebrados (Módulo 28)
 
 > **Região:** us-east-1 | **Custo estimado:** ~$0.02  
 > **Pré-requisitos:** AWS CLI configurado, Docker (opcional), Python 3.8+
