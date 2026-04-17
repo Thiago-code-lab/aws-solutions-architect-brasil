@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS SAA-C03 | Portal de Estudos</title>
+  <meta name="description" content="Portal de estudos AWS Certified Solutions Architect Associate (SAA-C03).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #16131f;
+      --surface: #1e1a2e;
+      --surface-elev: #252038;
+      --border: #2e2845;
+      --border-accent: #6d28d9;
+      --text: #f0ecff;
+      --text-2: #8b85a8;
+      --text-3: #4d4870;
+      --accent: #7c3aed;
+      --accent-soft: #2d1f52;
+      --accent-gradient: linear-gradient(90deg, #7c3aed, #a855f7);
+      --card-shadow: 0 8px 24px rgba(124, 58, 237, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    *::selection {
+      background: #6d28d9;
+      color: #ffffff;
+    }
+
+    html,
+    body {
+      scrollbar-color: #2e2845 #16131f;
+      scrollbar-width: thin;
+    }
+
+    body::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    body::-webkit-scrollbar-track {
+      background: #16131f;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background: #2e2845;
+      border-radius: 999px;
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+      background: #6d28d9;
+    }
+
+    body {
+      font-family: "Manrope", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .shell {
+      width: min(1140px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      background: #16131f;
+      border-bottom: 1px solid #2e2845;
+      position: sticky;
+      top: 0;
+      z-index: 30;
+    }
+
+    .topbar {
+      min-height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      position: relative;
+    }
+
+    .left-nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-width: 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text);
+      font-size: 0.87rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+
+    .brand-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #7c3aed;
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      font-size: 0.78rem;
+      color: #8b85a8;
+      padding: 5px 10px;
+      border-radius: 6px;
+    }
+
+    .nav-link.active {
+      background: #2d1f52;
+      color: #a78bfa;
+      font-weight: 600;
+    }
+
+    .repo-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #2d1f52;
+      border: 1px solid #6d28d9;
+      color: #a78bfa;
+      border-radius: 8px;
+      padding: 7px 12px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+
+    .menu-btn {
+      display: none;
+      border: 1px solid #2e2845;
+      background: #1e1a2e;
+      color: #a78bfa;
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 1rem;
+      line-height: 1;
+      cursor: pointer;
+    }
+
+    .mobile-nav {
+      display: none;
+      position: absolute;
+      top: 56px;
+      left: 0;
+      right: 0;
+      background: #1e1a2e;
+      border: 1px solid #2e2845;
+      border-radius: 10px;
+      padding: 10px;
+      z-index: 35;
+    }
+
+    .mobile-nav a {
+      display: block;
+      color: #8b85a8;
+      font-size: 0.8rem;
+      padding: 8px 10px;
+      border-radius: 6px;
+    }
+
+    .mobile-nav a.active {
+      background: #2d1f52;
+      color: #a78bfa;
+      font-weight: 600;
+    }
+
+    .hero-wrap {
+      padding: 20px 0 14px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: #1e1a2e;
+      border: 1px solid #2e2845;
+      border-radius: 14px;
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1.35fr 0.95fr;
+      gap: 22px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      right: -110px;
+      top: -140px;
+      pointer-events: none;
+      background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, rgba(124, 58, 237, 0) 70%);
+    }
+
+    .eyebrow {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 11px;
+      color: #a78bfa;
+      background: #2d1f52;
+      border: 1px solid #4c2d8f;
+      border-radius: 99px;
+      padding: 5px 12px;
+      margin-bottom: 14px;
+      letter-spacing: 0.04em;
+    }
+
+    .eyebrow .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #7c3aed;
+      flex-shrink: 0;
+    }
+
+    .hero-title {
+      position: relative;
+      z-index: 1;
+      color: #f0ecff;
+      font-size: clamp(2rem, 3.8vw, 3.15rem);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+      max-width: 14ch;
+      margin-bottom: 14px;
+    }
+
+    .hero-title .accent {
+      color: #a855f7;
+    }
+
+    .hero-body {
+      position: relative;
+      z-index: 1;
+      color: #8b85a8;
+      max-width: 64ch;
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .hero-ctas {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .cta-primary,
+    .cta-secondary {
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 0.86rem;
+      font-weight: 600;
+    }
+
+    .cta-primary {
+      color: #ffffff;
+      background: linear-gradient(135deg, #7c3aed, #a855f7);
+      border: 1px solid #7c3aed;
+    }
+
+    .cta-secondary {
+      color: #a78bfa;
+      background: transparent;
+      border: 1px solid #4c2d8f;
+    }
+
+    .hero-stats {
+      border-top: 1px solid #2e2845;
+      margin-top: 2px;
+      padding-top: 14px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .stat {
+      background: #2d1f52;
+      border-radius: 8px;
+      padding: 12px 16px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1;
+      color: #f0ecff;
+      margin-bottom: 4px;
+    }
+
+    .stat span {
+      font-size: 11px;
+      color: #4d4870;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    .prog-card {
+      background: #1e1a2e;
+      border: 1px solid #2e2845;
+      border-radius: 12px;
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+      align-self: start;
+    }
+
+    .prog-card .label,
+    .prog-of,
+    .prog-sublabel,
+    .prog-note,
+    .count-pill,
+    .sec-head p,
+    .chip,
+    .mod-id,
+    .open-link {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+
+    .prog-card .label {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #8b85a8;
+    }
+
+    .prog-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .prog-num {
+      font-size: 40px;
+      line-height: 1;
+      color: #f0ecff;
+      letter-spacing: -0.04em;
+      font-weight: 600;
+    }
+
+    .prog-of {
+      color: #8b85a8;
+      font-size: 12px;
+    }
+
+    .prog-sublabel {
+      color: #8b85a8;
+      font-size: 11px;
+    }
+
+    .prog-bar {
+      height: 6px;
+      border-radius: 999px;
+      background: #2d1f52;
+      overflow: hidden;
+    }
+
+    .prog-fill {
+      height: 100%;
+      width: 0;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #7c3aed, #a855f7);
+    }
+
+    .prog-note {
+      color: #4d4870;
+      font-size: 11px;
+    }
+
+    .section {
+      padding-top: 20px;
+    }
+
+    .sec-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .sec-head h3 {
+      color: #f0ecff;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .sec-head p,
+    .count-pill {
+      font-size: 11px;
+      color: #8b85a8;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .filter-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .chip {
+      border: 1px solid #2e2845;
+      background: #1e1a2e;
+      color: #8b85a8;
+      border-radius: 99px;
+      padding: 5px 12px;
+      font-size: 11px;
+      cursor: pointer;
+    }
+
+    .chip.on {
+      background: #2d1f52;
+      color: #a78bfa;
+      border-color: #6d28d9;
+    }
+
+    .mod-grid,
+    .sim-grid,
+    .gloss-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .mod-card,
+    .sim-card,
+    .gloss-card {
+      background: #1e1a2e;
+      border: 1px solid #2e2845;
+      border-radius: 12px;
+      padding: 14px 16px 16px;
+      position: relative;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
+    }
+
+    .mod-card::before,
+    .sim-card::before,
+    .gloss-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 3px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      background: linear-gradient(90deg, #7c3aed, #a855f7);
+    }
+
+    .mod-card:hover,
+    .sim-card:hover,
+    .gloss-card:hover {
+      background: #252038;
+      border-color: #6d28d9;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(124, 58, 237, 0.15);
+    }
+
+    .mod-id {
+      margin-top: 4px;
+      font-size: 10px;
+      color: #4d4870;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .mod-title,
+    .sim-title,
+    .gloss-title {
+      margin-top: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #f0ecff;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+    }
+
+    .mod-desc,
+    .sim-desc,
+    .gloss-desc {
+      margin-top: 8px;
+      font-size: 11px;
+      color: #8b85a8;
+      line-height: 1.6;
+    }
+
+    .open-link {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 11px;
+      color: #a855f7;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    footer {
+      margin-top: 28px;
+      border-top: 1px solid #2e2845;
+      padding: 20px 0 28px;
+      color: #8b85a8;
+      font-size: 0.85rem;
+      background: #16131f;
+    }
+
+    @media (max-width: 980px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .mod-grid,
+      .sim-grid,
+      .gloss-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 768px) {
+      .shell {
+        width: min(1140px, calc(100% - 32px));
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .menu-btn {
+        display: inline-flex;
+      }
+
+      .menu-toggle:checked ~ .mobile-nav {
+        display: block;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-title {
+        font-size: clamp(1.6rem, 5vw, 2.2rem);
+      }
+
+      .hero-ctas {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .cta-primary,
+      .cta-secondary {
+        width: 100%;
+        text-align: center;
+      }
+
+      .mod-grid,
+      .sim-grid,
+      .gloss-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell topbar">
+      <div class="left-nav">
+        <a class="brand" href="https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git" target="_blank" rel="noopener noreferrer">
+          <span class="brand-dot" aria-hidden="true"></span>
+          AWS SAA-C03
+        </a>
+        <nav class="nav-links" aria-label="Navegacao interna">
+          <a class="nav-link active" href="https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git" target="_blank" rel="noopener noreferrer">Modulos</a>
+          <a class="nav-link" href="https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git" target="_blank" rel="noopener noreferrer">Simulados</a>
+          <a class="nav-link" href="https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git" target="_blank" rel="noopener noreferrer">Glossario</a>
+        </nav>
+      </div>
+
+      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Abrir menu">
+      <label class="menu-btn" for="menu-toggle">☰</label>
+
+      <a class="repo-btn" href="https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git" target="_blank" rel="noopener noreferrer">Repositorio</a>
+
+      <nav class="mobile-nav" aria-label="Navegacao mobile">
+        <a class="active" href="https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git" target="_blank" rel="noopener noreferrer">Modulos</a>
+        <a href="https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git" target="_blank" rel="noopener noreferrer">Simulados</a>
+        <a href="https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git" target="_blank" rel="noopener noreferrer">Glossario</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="shell hero-wrap">
+    <section class="hero" id="topo">
+      <article>
+        <div class="eyebrow">
+          <span class="dot" aria-hidden="true"></span>
+          SAA-C03 · EM PREPARACAO
+        </div>
+        <h1 class="hero-title">Estude para pensar como <span class="accent">arquiteto</span> na AWS.</h1>
+        <p class="hero-body">O exame cobra decisao tecnica contextual. Este portal organiza o repositorio por modulos, simulados e progresso pessoal para uma revisao objetiva.</p>
+
+        <div class="hero-ctas">
+          <a class="cta-primary" href="https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git" target="_blank" rel="noopener noreferrer">Acessar portal de estudos →</a>
+          <a class="cta-secondary" href="https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git" target="_blank" rel="noopener noreferrer">Ver repositorio</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat"><strong>21</strong><span>Modulos</span></div>
+          <div class="stat"><strong>315</strong><span>Questoes</span></div>
+          <div class="stat"><strong>8</strong><span>Semanas</span></div>
+          <div class="stat"><strong>4</strong><span>Dominios</span></div>
+        </div>
+      </article>
+
+      <aside class="prog-card">
+        <div class="label">Progresso Geral</div>
+        <div>
+          <div class="prog-row">
+            <span class="prog-num" id="progN">0</span>
+            <span class="prog-of">/ 21 modulos</span>
+          </div>
+          <p class="prog-sublabel" id="progSub" style="margin-top: 4px;">0 concluidos</p>
+        </div>
+        <div>
+          <div class="prog-bar"><div class="prog-fill" id="progFill"></div></div>
+          <p class="prog-note" style="margin-top: 8px;">Salvo em localStorage neste navegador.</p>
+        </div>
+      </aside>
+    </section>
+  </div>
+
+  <main class="shell">
+    <section class="section" id="modulos">
+      <div class="sec-head">
+        <div>
+          <h3>Modulos</h3>
+          <p>Selecione um dominio no filtro e abra as sessoes.</p>
+        </div>
+        <span class="count-pill" id="countPill">21 modulos</span>
+      </div>
+      <div class="filter-strip" id="filters"></div>
+      <div class="mod-grid" id="moduleGrid"></div>
+    </section>
+
+    <section class="section" id="simulados">
+      <div class="sec-head">
+        <div>
+          <h3>Simulados</h3>
+          <p>Publicados conforme ficarem prontos no repositorio.</p>
+        </div>
+      </div>
+      <div class="sim-grid" id="simuladosGrid"></div>
+    </section>
+
+    <section class="section" id="glossario">
+      <div class="sec-head">
+        <div>
+          <h3>Glossario</h3>
+          <p>Acesso rapido ao modulo de revisao final.</p>
+        </div>
+      </div>
+      <div class="gloss-grid">
+        <article class="gloss-card">
+          <div class="mod-id">MODULO 20</div>
+          <h4 class="gloss-title">Glossario AWS</h4>
+          <p class="gloss-desc">Termos e conceitos essenciais para revisar antes do exame.</p>
+          <a class="open-link" href="https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git" target="_blank" rel="noopener noreferrer">Abrir sessao →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">AWS SAA-C03 · Portal de estudos minimalista</div>
+  </footer>
+
+  <script>
+    const DPCT = { Resilient: "30%", "High-Performing": "28%", Secure: "24%", "Cost-Optimized": "18%", Fundamentos: "-", Todos: "-" };
+
+    const mods = [
+      { id: "01", title: "Introducao SAA-C03", domain: "Fundamentos", status: "complete", folder: "01-Introducao-SAA-C03", desc: "Estrutura do exame, dominios, estrategia de estudo e plano de evolucao." },
+      { id: "02", title: "IAM e Seguranca", domain: "Secure", status: "complete", folder: "02-IAM-e-Seguranca", desc: "Identidade, autorizacao, KMS, Organizations e protecao de credenciais." },
+      { id: "03", title: "Computacao EC2", domain: "High-Performing", status: "complete", folder: "03-Computacao-EC2", desc: "Familias de instancia, EBS, AMIs e estrategias de computacao." },
+      { id: "04", title: "Alta Disponibilidade e Escalabilidade", domain: "Resilient", status: "complete", folder: "04-Alta-Disponibilidade-e-Escalabilidade", desc: "ALB, NLB, ASG, health checks e escalabilidade automatica." },
+      { id: "05", title: "Amazon S3 e Armazenamento", domain: "Resilient", status: "complete", folder: "05-Amazon-S3-e-Armazenamento", desc: "Versioning, lifecycle, replicacao e classes de armazenamento." },
+      { id: "06", title: "Banco de Dados", domain: "High-Performing", status: "complete", folder: "06-Banco-de-Dados", desc: "RDS, Aurora, DynamoDB e criterios de escolha para o exame." },
+      { id: "07", title: "VPC e Redes", domain: "Secure", status: "complete", folder: "07-VPC-e-Redes", desc: "Subnets, rotas, NAT, endpoints e conectividade hibrida." },
+      { id: "08", title: "DNS, Route 53 e CloudFront", domain: "Resilient", status: "complete", folder: "08-DNS-Route53-e-CloudFront", desc: "DNS gerenciado, CDN e distribuicao global com baixa latencia." },
+      { id: "09", title: "Desacoplamento: SQS, SNS, EventBridge", domain: "Resilient", status: "complete", folder: "09-Desacoplamento-SQS-SNS-EventBridge", desc: "Mensageria orientada a eventos e padroes para resiliencia." },
+      { id: "10", title: "Containers: ECS, EKS, Fargate", domain: "High-Performing", status: "complete", folder: "10-Containers-ECS-EKS-Fargate", desc: "Execucao de containers gerenciados e escolha por caso de uso." },
+      { id: "11", title: "Serverless: Lambda e API Gateway", domain: "Cost-Optimized", status: "complete", folder: "11-Serverless-Lambda-API-Gateway", desc: "Arquiteturas sem servidor com foco em simplicidade e custo." },
+      { id: "12", title: "Dados e Analytics", domain: "High-Performing", status: "complete", folder: "12-Dados-e-Analytics", desc: "Athena, Glue, Kinesis e pipelines analiticos na AWS." },
+      { id: "13", title: "Machine Learning e IA", domain: "High-Performing", status: "complete", folder: "13-Machine-Learning-e-IA", desc: "Servicos de IA gerenciados mais cobrados para arquitetos." },
+      { id: "14", title: "Monitoramento: CloudWatch e CloudTrail", domain: "Secure", status: "complete", folder: "14-Monitoramento-CloudWatch-CloudTrail", desc: "Logs, metricas e trilhas de auditoria para governanca." },
+      { id: "15", title: "Migracao e Transferencia", domain: "Cost-Optimized", status: "complete", folder: "15-Migracao-e-Transferencia", desc: "DMS, DataSync, Snow Family e estrategias de migracao." },
+      { id: "16", title: "Well-Architected Framework", domain: "Resilient", status: "complete", folder: "16-Well-Architected-Framework", desc: "Os pilares e revisoes arquiteturais para melhorias continuas." },
+      { id: "17", title: "Casos de Uso Reais", domain: "Resilient", status: "complete", folder: "17-Casos-de-Uso-Reais", desc: "Cenarios completos com trade-offs de arquitetura reais." },
+      { id: "18", title: "Labs Praticos", domain: "Todos", status: "complete", folder: "18-Labs-Praticos", desc: "Implementacoes praticas para consolidar a revisao teorica." },
+      { id: "19", title: "Simulados e Questoes", domain: "Todos", status: "complete", folder: "19-Simulados-e-Questoes", desc: "Treino final com questoes no estilo da certificacao." },
+      { id: "20", title: "Glossario", domain: "Fundamentos", status: "complete", folder: "20-Glossario", desc: "Revisao de termos tecnicos e vocabulario da prova." },
+      { id: "21", title: "Recursos e Links", domain: "Fundamentos", status: "complete", folder: "21-Recursos-e-Links", desc: "Curadoria de referencias para estudo continuo." }
+    ].map((m) => ({ ...m, link: "https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git" }));
+
+    const sims = [
+      { title: "Simulado 01", desc: "65 questoes com distribuicao proporcional aos dominios do exame.", href: "https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git", status: "Em producao" },
+      { title: "Simulado 02", desc: "65 questoes com foco em cenarios arquiteturais complexos.", href: "https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git", status: "Em producao" },
+      { title: "Simulado 03", desc: "65 questoes mais desafiadoras com multi-step reasoning.", href: "https://github.com/Thiago-code-lab/aws-solutions-architect-brasil.git", status: "Em producao" }
+    ];
+
+    const FILTERS = ["Todos", "Fundamentos", "Resilient", "High-Performing", "Secure", "Cost-Optimized"];
+    let active = "Todos";
+    const SK = "aws-saa-v4";
+    let prog = JSON.parse(localStorage.getItem(SK) || "{}");
+
+    function filtered() {
+      return active === "Todos" ? mods : mods.filter((m) => m.domain === active);
+    }
+
+    function renderFilters() {
+      const b = document.getElementById("filters");
+      b.innerHTML = "";
+      FILTERS.forEach((f) => {
+        const el = document.createElement("button");
+        el.type = "button";
+        el.className = "chip" + (f === active ? " on" : "");
+        el.textContent = f;
+        el.addEventListener("click", () => {
+          active = f;
+          renderFilters();
+          renderMods();
+        });
+        b.appendChild(el);
+      });
+    }
+
+    function renderMods() {
+      const grid = document.getElementById("moduleGrid");
+      const pill = document.getElementById("countPill");
+      const arr = filtered();
+      pill.textContent = arr.length + " modulo" + (arr.length !== 1 ? "s" : "");
+      grid.innerHTML = "";
+      arr.forEach((m) => {
+        const pct = DPCT[m.domain] || "-";
+        const card = document.createElement("article");
+        card.className = "mod-card";
+        card.innerHTML = `
+          <div class="mod-id" data-id="${m.id}">MODULO ${m.id}${pct !== "-" ? ` · ${pct}` : ""}</div>
+          <h4 class="mod-title">${m.title}</h4>
+          <p class="mod-desc">${m.desc}</p>
+          <a class="open-link" href="${m.link}" target="_blank" rel="noopener noreferrer">Abrir sessao →</a>
+        `;
+        grid.appendChild(card);
+      });
+
+      grid.querySelectorAll(".mod-id[data-id]").forEach((el) => {
+        el.addEventListener("click", (event) => {
+          const id = event.currentTarget.getAttribute("data-id");
+          prog[id] = !prog[id];
+          localStorage.setItem(SK, JSON.stringify(prog));
+          updateProg();
+        });
+      });
+    }
+
+    function updateProg() {
+      const total = mods.length;
+      const done = Object.values(prog).filter(Boolean).length;
+      document.getElementById("progN").textContent = done;
+      document.getElementById("progSub").textContent = `${done} concluido${done !== 1 ? "s" : ""}`;
+      document.getElementById("progFill").style.width = `${Math.round((done / total) * 100)}%`;
+    }
+
+    function renderSims() {
+      document.getElementById("simuladosGrid").innerHTML = sims
+        .map(
+          (s) => `
+        <article class="sim-card">
+          <h4 class="sim-title">${s.title}</h4>
+          <p class="sim-desc">${s.desc}</p>
+          ${s.href ? `<a class="open-link" href="${s.href}" target="_blank" rel="noopener noreferrer">Abrir sessao →</a>` : `<span class="open-link">${s.status}</span>`}
+        </article>`
+        )
+        .join("");
+    }
+
+    renderFilters();
+    renderMods();
+    renderSims();
+    updateProg();
+  </script>
+</body>
+</html>
